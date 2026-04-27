@@ -5,7 +5,10 @@ body {
   color: #eaeaea;
 }
 
-/* PAGE TRANSITIONS */
+/* =========================
+   PAGE TRANSITIONS
+========================= */
+
 .page {
   display: none;
   padding: 20px;
@@ -20,7 +23,10 @@ body {
   transform: translateY(0);
 }
 
-/* TOP BAR */
+/* =========================
+   TOP BAR
+========================= */
+
 .top-bar {
   display: flex;
   justify-content: space-between;
@@ -35,7 +41,10 @@ body {
   border: 1px solid #333;
 }
 
-/* XP BAR */
+/* =========================
+   XP BAR
+========================= */
+
 .xp-container {
   width: 60%;
 }
@@ -59,7 +68,10 @@ body {
   box-shadow: 0 0 10px #4CAF50;
 }
 
-/* AUTH */
+/* =========================
+   AUTH
+========================= */
+
 .auth-container {
   max-width: 320px;
   margin: 100px auto;
@@ -78,7 +90,10 @@ body {
   color: white;
 }
 
-/* DASHBOARD */
+/* =========================
+   DASHBOARD
+========================= */
+
 .card-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -96,7 +111,6 @@ body {
   position: relative;
 }
 
-/* NEON GLOW EFFECT */
 .card:hover {
   transform: translateY(-6px) scale(1.04);
 }
@@ -106,13 +120,15 @@ body {
 .history:hover { box-shadow: 0 0 20px #FF9800; }
 .science:hover { box-shadow: 0 0 20px #9C27B0; }
 
-/* SUBJECT COLORS */
 .math { border-left: 5px solid #4CAF50; }
 .english { border-left: 5px solid #2196F3; }
 .history { border-left: 5px solid #FF9800; }
 .science { border-left: 5px solid #9C27B0; }
 
-/* ANALYTICS */
+/* =========================
+   ANALYTICS
+========================= */
+
 .analytics {
   margin-top: 30px;
   padding: 20px;
@@ -121,7 +137,10 @@ body {
   border: 1px solid #2a2a2a;
 }
 
-/* SUBJECT */
+/* =========================
+   SUBJECT LIST
+========================= */
+
 .search {
   width: 100%;
   padding: 10px;
@@ -143,26 +162,189 @@ body {
   box-shadow: 0 0 10px rgba(255,255,255,0.1);
 }
 
-/* CLASS PAGE */
+/* =========================
+   TABS
+========================= */
+
 .tabs button {
   padding: 10px;
   background: #1a1a1a;
   border: 1px solid #333;
   color: white;
+  cursor: pointer;
 }
 
 .tab {
   display: none;
   margin-top: 20px;
-  padding: 20px;
-  background: #1a1a1a;
+  padding: 25px;
+  background: linear-gradient(145deg, #151515, #101010);
+  border-radius: 16px;
+  border: 1px solid #2a2a2a;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
 }
 
 .tab.active {
   display: block;
 }
 
-/* MOBILE */
+/* =========================
+   NOTES
+========================= */
+
+#notesTab h2 {
+  margin-top: 25px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 6px;
+}
+
+#notesTab h3 {
+  margin-top: 15px;
+}
+
+#notesTab li {
+  background: #1b1b1b;
+  margin: 8px 0;
+  padding: 12px;
+  border-radius: 10px;
+  border-left: 3px solid var(--theme, #2196F3);
+  transition: 0.2s;
+}
+
+#notesTab li:hover {
+  transform: translateX(5px);
+  background: #222;
+}
+
+/* =========================
+   QUIZ
+========================= */
+
+#quizTab p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+#quizTab button {
+  width: 100%;
+  margin: 10px 0;
+  padding: 14px;
+  border-radius: 12px;
+
+  background: #151515;
+  color: white;
+  border: 1px solid var(--theme, #2196F3);
+
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+#quizTab button:hover {
+  background: var(--theme, #2196F3);
+  color: black;
+  transform: scale(1.02);
+  box-shadow: 0 0 15px var(--theme);
+}
+
+/* =========================
+   GAME FIX (CENTER + SMALLER)
+========================= */
+
+#gameTab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  max-height: 75vh;
+  overflow: hidden;
+}
+
+.game-wrapper {
+  transform: scale(0.9);
+  transform-origin: top center;
+  margin-top: 10px;
+}
+
+/* PATH */
+.game-path {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+/* NODE */
+.game-node {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  border: 2px solid #333;
+  background: #1a1a1a;
+  position: relative;
+}
+
+/* PLAYER */
+.player {
+  width: 20px;
+  height: 20px;
+  background: var(--theme);
+  border-radius: 50%;
+  box-shadow: 0 0 12px var(--glow);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* GOAL */
+.game-goal {
+  width: 120px;
+  text-align: center;
+  padding: 10px;
+  border: 2px solid var(--theme);
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 12px var(--glow);
+}
+
+/* QUESTION AREA */
+#game-q {
+  margin-top: 12px;
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+}
+
+#game-q h3 {
+  font-size: 16px;
+}
+
+/* GAME BUTTONS */
+.game-btn {
+  width: 100%;
+  padding: 12px;
+  margin: 6px 0;
+
+  background: #1f1f1f;
+  border: 2px solid var(--theme);
+  color: white;
+
+  border-radius: 10px;
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.game-btn:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 12px var(--glow);
+}
+
+/* =========================
+   MOBILE
+========================= */
+
 @media (max-width: 600px) {
   .card-grid {
     grid-template-columns: 1fr;

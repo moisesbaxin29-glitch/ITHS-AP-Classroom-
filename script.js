@@ -106,7 +106,7 @@ function openSubject(subject) {
 }
 
 /* =========================
-   NORMALIZER
+   NORMALIZER (FIXED UNIVERSAL)
 ========================= */
 
 function normalizeData(data) {
@@ -114,7 +114,6 @@ function normalizeData(data) {
 
   let units = [];
 
-  // AP CALC / PRECALC
   if (Array.isArray(data.Units)) {
     units = data.Units.map(u => ({
       title: u.Title || `Unit ${u.Unit || ""}`,
@@ -124,10 +123,7 @@ function normalizeData(data) {
         questions: normalizeQuestions(t.Practice_Questions)
       }))
     }));
-  }
-
-  // MACRO / APES STYLE
-  else if (Array.isArray(data.units)) {
+  } else if (Array.isArray(data.units)) {
     units = data.units.map(u => ({
       title: u.title || `Unit ${u.unit_id || ""}`,
       topics: (u.topics || []).map(t => ({
@@ -135,7 +131,9 @@ function normalizeData(data) {
         notes: normalizeNotes(
           t.notes || t.key_terms || t.examples || t.key_concepts || ""
         ),
-        questions: normalizeQuestions(t.practice_questions || t.Practice_Questions)
+        questions: normalizeQuestions(
+          t.practice_questions || t.Practice_Questions
+        )
       }))
     }));
   }
@@ -144,7 +142,7 @@ function normalizeData(data) {
 }
 
 /* =========================
-   NOTES NORMALIZER
+   NOTES
 ========================= */
 
 function normalizeNotes(notes) {
@@ -153,19 +151,22 @@ function normalizeNotes(notes) {
   if (typeof notes === "string") return [notes];
 
   if (Array.isArray(notes)) {
-    return notes.flatMap(n => {
-      if (typeof n === "string") return [n];
-      if (n.title && n.content) return [`${n.title}: ${n.content}`];
-      if (n.term && n.definition) return [`${n.term}: ${n.definition}`];
-      return [JSON.stringify(n)];
-    });
+    return notes.map(n =>
+      typeof n === "string"
+        ? n
+        : n.title && n.content
+        ? `${n.title}: ${n.content}`
+        : n.term && n.definition
+        ? `${n.term}: ${n.definition}`
+        : JSON.stringify(n)
+    );
   }
 
   return [];
 }
 
 /* =========================
-   QUESTIONS NORMALIZER
+   QUESTIONS
 ========================= */
 
 function normalizeQuestions(qs) {
@@ -221,22 +222,13 @@ function renderEmpty() {
 function renderNotes(data) {
   const container = document.getElementById("notesTab");
 
-  let html = `
-    <h3 style="color: var(--theme); text-shadow: 0 0 10px var(--glow)">
-      📚 Study Guide
-    </h3>
-  `;
+  let html = `<h3 style="color:var(--theme)">📚 Study Guide</h3>`;
 
   data.units.forEach(unit => {
     html += `<h2>${unit.title}</h2>`;
 
     unit.topics.forEach(topic => {
-      html += `
-        <h3 style="color: var(--theme)">
-          ${topic.topic}
-        </h3>
-        <ul>
-      `;
+      html += `<h3 style="color:var(--theme)">${topic.topic}</h3><ul>`;
 
       topic.notes.forEach(n => {
         html += `<li>${n}</li>`;
@@ -286,61 +278,121 @@ function showQuestion() {
   }
 
   currentQ = quizBank[quizIndex];
-  const choices = currentQ.choices || [];
 
   let html = `
-    <h3 style="color: var(--theme)">Question</h3>
+    <h3 style="color:var(--theme)">Question</h3>
     <p>${currentQ.question}</p>
   `;
 
-  if (choices.length) {
-    choices.forEach((c, i) => {
-      html += `
-        <button onclick="answer(${i})"
-          style="border:1px solid var(--theme); box-shadow:0 0 8px var(--glow);">
-          ${c}
-        </button><br>
-      `;
-    });
-  } else {
-    html += `<p>No choices available</p>`;
-  }
+  (currentQ.choices || []).forEach((c, i) => {
+    html += `
+      <button class="game-btn" onclick="answer(${i})">${c}</button>
+    `;
+  });
 
   html += `<p id="fb"></p>`;
+
   container.innerHTML = html;
 }
 
 function answer(i) {
   const fb = document.getElementById("fb");
-  if (!currentQ) return;
 
-  fb.innerText = i === currentQ.answer ? "✅ Correct" : "❌ Wrong";
+  fb.innerText =
+    i === currentQ.answer ? "✅ Correct" : "❌ Wrong";
 
   quizIndex++;
   setTimeout(showQuestion, 800);
 }
 
 /* =========================
-   GAME
+   GAME SYSTEM (PATH MODE)
 ========================= */
+
+let gameState = {
+  position: 3,
+  pathLength: 7,
+  questions: [],
+  current: null
+};
+
+function buildGameQuestions(data) {
+  let qs = [];
+
+  data.units.forEach(u => {
+    u.topics.forEach(t => {
+      if (Array.isArray(t.questions)) qs.push(...t.questions);
+    });
+  });
+
+  return qs;
+}
 
 function renderGame(data) {
   const container = document.getElementById("gameTab");
 
-  const first = data.units?.[0]?.topics?.[0]?.questions?.[0];
+  gameState.questions = buildGameQuestions(data);
 
-  if (!first) {
+  if (!gameState.questions.length) {
     container.innerHTML = "<p>No game available</p>";
     return;
   }
 
-  container.innerHTML = `
-    <h3 style="color: var(--theme)">🎮 Game Mode</h3>
-    <p>${first.question}</p>
+  drawGame();
+  nextGameQuestion();
+}
 
-    <button style="border:1px solid var(--theme)">Option A</button>
-    <button style="border:1px solid var(--theme)">Option B</button>
+function drawGame() {
+  let html = `
+    <div class="game-wrapper">
+      <div class="game-goal">GOAL</div>
+      <div class="game-path">
   `;
+
+  for (let i = 0; i < gameState.pathLength; i++) {
+    html += `
+      <div class="game-node">
+        ${i === gameState.position ? `<div class="player"></div>` : ""}
+      </div>
+    `;
+  }
+
+  html += `</div></div><div id="game-q"></div>`;
+
+  document.getElementById("gameTab").innerHTML = html;
+}
+
+function nextGameQuestion() {
+  const q =
+    gameState.questions[
+      Math.floor(Math.random() * gameState.questions.length)
+    ];
+
+  gameState.current = q;
+
+  const box = document.getElementById("game-q");
+
+  let html = `<h3 style="color:var(--theme)">${q.question}</h3>`;
+
+  (q.choices || []).forEach((c, i) => {
+    html += `<button class="game-btn" onclick="gameAnswer(${i})">${c}</button>`;
+  });
+
+  box.innerHTML = html;
+}
+
+function gameAnswer(i) {
+  if (i === gameState.current.answer) {
+    gameState.position = Math.max(0, gameState.position - 1);
+  } else {
+    gameState.position = Math.min(
+      gameState.pathLength - 1,
+      gameState.position + 1
+    );
+  }
+
+  drawGame();
+  nextGameQuestion();
 }
 
 /* =========================
