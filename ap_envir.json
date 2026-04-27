@@ -1,35 +1,5 @@
 {
   "course": "AP Environmental Science",
-  "exam_info": {
-    "exam_format": {
-      "multiple_choice": {
-        "sections": 2,
-        "calculator": "Allowed",
-        "question_count": 80
-      },
-      "free_response": {
-        "question_count": 3,
-        "calculator": "Allowed"
-      },
-      "duration_minutes": 130
-    },
-    "skills_tested": [
-      "Ecosystem analysis",
-      "Environmental systems",
-      "Human impact evaluation",
-      "Data interpretation",
-      "Sustainability solutions",
-      "Scientific reasoning"
-    ],
-    "scoring": {
-      "scale": "1-5",
-      "breakdown": {
-        "multiple_choice_weight": 0.6,
-        "free_response_weight": 0.4
-      }
-    }
-  },
-
   "units": [
     {
       "unit_id": 1,
@@ -43,32 +13,21 @@
             "Only ~10% of energy transfers between trophic levels.",
             "Food chains and food webs show energy relationships."
           ],
-          "formulas": [
-            "Energy Transfer ≈ 10% rule"
-          ],
-          "examples": [
-            "Plants → rabbits → foxes energy decreases at each level"
-          ],
           "practice_questions": [
             {
               "question": "Why is energy lost between trophic levels?",
-              "answer": "Heat loss through metabolism",
-              "explanation": "Organisms use energy for life processes."
+              "choices": [
+                "Organisms store all energy",
+                "Heat loss through metabolism",
+                "Energy is recycled",
+                "Energy increases upward"
+              ],
+              "answer": 1,
+              "explanation": "Organisms use energy for life processes, releasing heat."
             }
-          ],
-          "common_mistakes": [
-            "Confusing energy flow with nutrient cycling"
           ]
         }
-      ],
-      "unit_review": {
-        "key_concepts": [
-          "Energy flows one direction",
-          "Producers start all ecosystems"
-        ],
-        "practice_test": [],
-        "flashcards": []
-      }
+      ]
     },
 
     {
@@ -83,30 +42,21 @@
             "Higher biodiversity increases stability",
             "Habitat loss reduces biodiversity"
           ],
-          "formulas": [],
-          "examples": [
-            "Rainforests have high biodiversity"
-          ],
           "practice_questions": [
             {
               "question": "What increases ecosystem stability?",
-              "answer": "High biodiversity",
-              "explanation": "More species = more resilience"
+              "choices": [
+                "Low biodiversity",
+                "High biodiversity",
+                "Less species interaction",
+                "More pollution"
+              ],
+              "answer": 1,
+              "explanation": "More species diversity increases resilience."
             }
-          ],
-          "common_mistakes": [
-            "Thinking biodiversity only means number of species"
           ]
         }
-      ],
-      "unit_review": {
-        "key_concepts": [
-          "Biodiversity improves resilience",
-          "Extinction reduces ecosystem stability"
-        ],
-        "practice_test": [],
-        "flashcards": []
-      }
+      ]
     },
 
     {
@@ -121,32 +71,21 @@
             "Carrying capacity limits growth",
             "Limiting factors control populations"
           ],
-          "formulas": [
-            "Growth rate = (births - deaths) / population"
-          ],
-          "examples": [
-            "Bacteria grow exponentially until resources run out"
-          ],
           "practice_questions": [
             {
               "question": "What is carrying capacity?",
-              "answer": "Maximum population an environment can support",
-              "explanation": "Limited by resources"
+              "choices": [
+                "Unlimited growth potential",
+                "Maximum population an environment can support",
+                "Birth rate of species",
+                "Death rate only"
+              ],
+              "answer": 1,
+              "explanation": "It is the maximum sustainable population."
             }
-          ],
-          "common_mistakes": [
-            "Confusing exponential with logistic growth"
           ]
         }
-      ],
-      "unit_review": {
-        "key_concepts": [
-          "Populations cannot grow forever",
-          "Resources limit growth"
-        ],
-        "practice_test": [],
-        "flashcards": []
-      }
+      ]
     },
 
     {
@@ -160,30 +99,21 @@
             "Evaporation, condensation, precipitation",
             "Human use affects water availability"
           ],
-          "formulas": [],
-          "examples": [
-            "Deforestation increases runoff"
-          ],
           "practice_questions": [
             {
               "question": "What process returns water to the atmosphere?",
-              "answer": "Evaporation",
-              "explanation": "Water changes from liquid to vapor"
+              "choices": [
+                "Infiltration",
+                "Evaporation",
+                "Runoff",
+                "Condensation"
+              ],
+              "answer": 1,
+              "explanation": "Evaporation turns liquid water into vapor."
             }
-          ],
-          "common_mistakes": [
-            "Mixing infiltration with runoff"
           ]
         }
-      ],
-      "unit_review": {
-        "key_concepts": [
-          "Water cycles continuously",
-          "Human activity disrupts cycles"
-        ],
-        "practice_test": [],
-        "flashcards": []
-      }
+      ]
     },
 
     {
@@ -198,30 +128,21 @@
             "Pesticides affect ecosystems",
             "Soil erosion is a major issue"
           ],
-          "formulas": [],
-          "examples": [
-            "Industrial farming increases yield but harms soil"
-          ],
           "practice_questions": [
             {
               "question": "What is a downside of monoculture farming?",
-              "answer": "Reduced biodiversity",
-              "explanation": "Same crop reduces ecosystem variety"
+              "choices": [
+                "Increased biodiversity",
+                "Reduced biodiversity",
+                "Faster regeneration",
+                "No soil impact"
+              ],
+              "answer": 1,
+              "explanation": "Monoculture reduces ecosystem variety."
             }
-          ],
-          "common_mistakes": [
-            "Confusing sustainable vs industrial agriculture"
           ]
         }
-      ],
-      "unit_review": {
-        "key_concepts": [
-          "Farming impacts ecosystems",
-          "Sustainability balances output and environment"
-        ],
-        "practice_test": [],
-        "flashcards": []
-      }
+      ]
     },
 
     {
@@ -236,30 +157,21 @@
             "Nonrenewable: coal, oil, gas",
             "Fossil fuels cause pollution"
           ],
-          "formulas": [],
-          "examples": [
-            "Solar energy is renewable"
-          ],
           "practice_questions": [
             {
               "question": "Which is renewable energy?",
-              "answer": "Wind energy",
-              "explanation": "Wind is naturally replenished"
+              "choices": [
+                "Coal",
+                "Oil",
+                "Wind energy",
+                "Natural gas"
+              ],
+              "answer": 2,
+              "explanation": "Wind is naturally replenished."
             }
-          ],
-          "common_mistakes": [
-            "Thinking all clean energy is renewable"
           ]
         }
-      ],
-      "unit_review": {
-        "key_concepts": [
-          "Energy sources differ in sustainability",
-          "Fossil fuels contribute to climate change"
-        ],
-        "practice_test": [],
-        "flashcards": []
-      }
+      ]
     },
 
     {
@@ -271,67 +183,23 @@
           "name": "Types of Pollution",
           "notes": [
             "Air, water, soil pollution",
-            "Point vs nonpoint sources",
             "Bioaccumulation affects food chains"
-          ],
-          "formulas": [],
-          "examples": [
-            "Mercury builds up in fish"
           ],
           "practice_questions": [
             {
               "question": "What is bioaccumulation?",
-              "answer": "Build-up of toxins in organisms",
-              "explanation": "Toxins increase up food chain"
+              "choices": [
+                "Breakdown of toxins",
+                "Build-up of toxins in organisms",
+                "Energy transfer",
+                "Water cycle process"
+              ],
+              "answer": 1,
+              "explanation": "Toxins accumulate in organisms over time."
             }
-          ],
-          "common_mistakes": [
-            "Confusing bioaccumulation with biomagnification"
           ]
         }
-      ],
-      "unit_review": {
-        "key_concepts": [
-          "Pollution impacts ecosystems",
-          "Toxins move through food chains"
-        ],
-        "practice_test": [],
-        "flashcards": []
-      }
-    }
-  ],
-
-  "formula_sheet": [
-    {
-      "category": "Environmental Science",
-      "formulas": [
-        "Population Growth Rate = (births - deaths)/population",
-        "Energy Transfer ≈ 10% rule"
       ]
-    }
-  ],
-
-  "study_plan": {
-    "daily_schedule": [],
-    "weekly_goals": [],
-    "progress_tracking": {
-      "units_completed": [],
-      "practice_scores": []
-    }
-  },
-
-  "practice_resources": {
-    "past_exams": [],
-    "question_bank": [],
-    "flashcards": []
-  },
-
-  "mistake_log": [
-    {
-      "date": "",
-      "topic": "",
-      "mistake": "",
-      "correction": ""
     }
   ]
 }

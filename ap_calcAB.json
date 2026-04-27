@@ -1,35 +1,5 @@
 {
   "course": "AP Calculus BC",
-  "exam_info": {
-    "exam_format": {
-      "multiple_choice": {
-        "sections": 2,
-        "calculator": "Some sections allow graphing calculator",
-        "question_count": 45
-      },
-      "free_response": {
-        "question_count": 6,
-        "calculator": "Mixed"
-      },
-      "duration_minutes": 180
-    },
-    "skills_tested": [
-      "Limits and continuity",
-      "Differentiation and applications",
-      "Integration and applications",
-      "Series and convergence",
-      "Parametric and polar functions",
-      "Vector functions"
-    ],
-    "scoring": {
-      "scale": "1-5",
-      "breakdown": {
-        "multiple_choice_weight": 0.5,
-        "free_response_weight": 0.5
-      }
-    }
-  },
-
   "units": [
     {
       "unit_id": 1,
@@ -43,33 +13,21 @@
             "One-sided limits determine behavior from left or right.",
             "Limits may exist even if function is undefined."
           ],
-          "formulas": [
-            "lim(x→a) f(x) = L",
-            "lim(x→∞) f(x)"
-          ],
-          "examples": [
-            "lim(x→2) (x^2 - 4)/(x - 2) = 4"
-          ],
           "practice_questions": [
             {
               "question": "Evaluate lim(x→3) (x^2 - 9)/(x - 3)",
-              "answer": "6",
-              "explanation": "Factor numerator: (x-3)(x+3), cancel, substitute x=3."
+              "choices": [
+                "3",
+                "6",
+                "9",
+                "12"
+              ],
+              "answer": 1,
+              "explanation": "Factor: (x-3)(x+3), cancel (x-3), substitute x=3 → 6."
             }
-          ],
-          "common_mistakes": [
-            "Forgetting to factor before substituting"
           ]
         }
-      ],
-      "unit_review": {
-        "key_concepts": [
-          "Limits define behavior near points",
-          "Continuity requires limit equals function value"
-        ],
-        "practice_test": [],
-        "flashcards": []
-      }
+      ]
     },
 
     {
@@ -80,35 +38,24 @@
           "topic_id": "2.1",
           "name": "Derivative Definition",
           "notes": [
-            "Derivative measures instantaneous rate of change",
-            "Slope of tangent line"
-          ],
-          "formulas": [
-            "f'(x) = lim(h→0) (f(x+h) - f(x))/h"
-          ],
-          "examples": [
-            "Derivative of x^2 is 2x"
+            "Derivative measures instantaneous rate of change.",
+            "It represents slope of a tangent line."
           ],
           "practice_questions": [
             {
               "question": "Find derivative of f(x)=x^3",
-              "answer": "3x^2",
-              "explanation": "Power rule: nx^(n-1)"
+              "choices": [
+                "x^2",
+                "2x^2",
+                "3x^2",
+                "3x^3"
+              ],
+              "answer": 2,
+              "explanation": "Power rule: d/dx(x^n)=nx^(n-1)"
             }
-          ],
-          "common_mistakes": [
-            "Forgetting to subtract 1 from exponent"
           ]
         }
-      ],
-      "unit_review": {
-        "key_concepts": [
-          "Derivatives represent rate of change",
-          "Use power, product, quotient, chain rules"
-        ],
-        "practice_test": [],
-        "flashcards": []
-      }
+      ]
     },
 
     {
@@ -119,36 +66,24 @@
           "topic_id": "3.1",
           "name": "Fundamental Theorem of Calculus",
           "notes": [
-            "Connects derivatives and integrals",
-            "Area under curve"
-          ],
-          "formulas": [
-            "∫ f(x) dx = F(x) + C",
-            "d/dx ∫ f(t) dt = f(x)"
-          ],
-          "examples": [
-            "∫ 2x dx = x^2 + C"
+            "Connects derivatives and integrals.",
+            "Used to compute area under curves."
           ],
           "practice_questions": [
             {
               "question": "Find ∫ 3x^2 dx",
-              "answer": "x^3 + C",
-              "explanation": "Increase exponent and divide"
+              "choices": [
+                "x^3",
+                "x^3 + C",
+                "3x^3 + C",
+                "x^2 + C"
+              ],
+              "answer": 1,
+              "explanation": "Power rule: increase exponent, divide, add +C"
             }
-          ],
-          "common_mistakes": [
-            "Forgetting +C"
           ]
         }
-      ],
-      "unit_review": {
-        "key_concepts": [
-          "Integration is reverse of differentiation",
-          "Used for area and accumulation"
-        ],
-        "practice_test": [],
-        "flashcards": []
-      }
+      ]
     },
 
     {
@@ -159,36 +94,24 @@
           "topic_id": "4.1",
           "name": "Convergence Tests",
           "notes": [
-            "Determine if infinite series converges",
-            "Common tests: ratio, comparison, integral"
-          ],
-          "formulas": [
-            "Σ a_n",
-            "lim n→∞ a_n = 0 (necessary condition)"
-          ],
-          "examples": [
-            "Geometric series: a/(1-r)"
+            "Used to determine if infinite series converge.",
+            "Includes ratio, comparison, and integral tests."
           ],
           "practice_questions": [
             {
               "question": "Does Σ 1/2^n converge?",
-              "answer": "Yes",
-              "explanation": "Geometric series with r<1"
+              "choices": [
+                "No",
+                "Yes",
+                "Only sometimes",
+                "Cannot determine"
+              ],
+              "answer": 1,
+              "explanation": "Geometric series with r < 1 converges."
             }
-          ],
-          "common_mistakes": [
-            "Confusing divergence with divergence test failure"
           ]
         }
-      ],
-      "unit_review": {
-        "key_concepts": [
-          "Series may converge or diverge",
-          "Geometric and p-series are key types"
-        ],
-        "practice_test": [],
-        "flashcards": []
-      }
+      ]
     },
 
     {
@@ -199,77 +122,24 @@
           "topic_id": "5.1",
           "name": "Parametric Equations",
           "notes": [
-            "Functions defined by parameter t",
-            "Used for motion"
-          ],
-          "formulas": [
-            "dx/dt, dy/dt",
-            "dy/dx = (dy/dt)/(dx/dt)"
-          ],
-          "examples": [
-            "x=t, y=t^2 → parabola"
+            "Equations defined in terms of parameter t.",
+            "Used to describe motion in space."
           ],
           "practice_questions": [
             {
-              "question": "Find dy/dx if x=t, y=t^2",
-              "answer": "2t",
-              "explanation": "Divide derivatives"
+              "question": "Find dy/dx if x=t and y=t^2",
+              "choices": [
+                "t",
+                "2t",
+                "t^2",
+                "1/t"
+              ],
+              "answer": 1,
+              "explanation": "dy/dx = (dy/dt)/(dx/dt) = (2t)/1 = 2t"
             }
-          ],
-          "common_mistakes": [
-            "Forgetting chain rule in parametrics"
           ]
         }
-      ],
-      "unit_review": {
-        "key_concepts": [
-          "Parametric = motion",
-          "Polar = angle-based system",
-          "Vectors = direction + magnitude"
-        ],
-        "practice_test": [],
-        "flashcards": []
-      }
-    }
-  ],
-
-  "formula_sheet": [
-    {
-      "category": "Derivatives",
-      "formulas": [
-        "d/dx x^n = nx^(n-1)",
-        "Product rule: f'g + fg'"
       ]
-    },
-    {
-      "category": "Integrals",
-      "formulas": [
-        "∫ x^n dx = x^(n+1)/(n+1) + C"
-      ]
-    }
-  ],
-
-  "study_plan": {
-    "daily_schedule": [],
-    "weekly_goals": [],
-    "progress_tracking": {
-      "units_completed": [],
-      "practice_scores": []
-    }
-  },
-
-  "practice_resources": {
-    "past_exams": [],
-    "question_bank": [],
-    "flashcards": []
-  },
-
-  "mistake_log": [
-    {
-      "date": "",
-      "topic": "",
-      "mistake": "",
-      "correction": ""
     }
   ]
 }

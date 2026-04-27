@@ -1,13 +1,40 @@
 /* =========================
-   NAVIGATION
+   STATE
+========================= */
+
+let isLoggedIn = false;
+
+/* =========================
+   NAVIGATION (FIXED - ONLY ONE)
 ========================= */
 
 function goTo(pageId) {
+  if (!isLoggedIn && pageId !== "authPage") {
+    alert("Please sign in first.");
+    return;
+  }
+
   document.querySelectorAll(".page").forEach(p => p.classList.remove("active"));
 
-  setTimeout(() => {
-    document.getElementById(pageId).classList.add("active");
-  }, 50);
+  const page = document.getElementById(pageId);
+  if (page) page.classList.add("active");
+}
+
+/* =========================
+   SIGN IN
+========================= */
+
+function signIn() {
+  const email = document.querySelector('#authPage input[type="email"]').value.trim();
+  const password = document.querySelector('#authPage input[type="password"]').value.trim();
+
+  if (!email || !password) {
+    alert("Please enter both email and password.");
+    return;
+  }
+
+  isLoggedIn = true;
+  goTo("dashboard");
 }
 
 /* =========================
@@ -37,7 +64,7 @@ const fileMap = {
 };
 
 /* =========================
-   THEMES
+   THEME
 ========================= */
 
 const themeMap = {
@@ -48,26 +75,16 @@ const themeMap = {
   default: { color: "#2196F3", glow: "#2196F3" }
 };
 
-let currentTheme = themeMap.default;
-
-/* =========================
-   APPLY THEME
-========================= */
-
 function applyTheme(theme) {
   document.documentElement.style.setProperty("--theme", theme.color);
   document.documentElement.style.setProperty("--glow", theme.glow);
 }
 
 /* =========================
-   DATA REGISTRY
+   DATA
 ========================= */
 
 const dataRegistry = {};
-
-/* =========================
-   LOAD JSON FILES
-========================= */
 
 async function loadAllData() {
   await Promise.all(
@@ -80,14 +97,11 @@ async function loadAllData() {
       }
     })
   );
-
-  console.log("All data loaded");
 }
-
 loadAllData();
 
 /* =========================
-   OPEN SUBJECT
+   SUBJECTS
 ========================= */
 
 function openSubject(subject) {
@@ -106,7 +120,7 @@ function openSubject(subject) {
 }
 
 /* =========================
-   NORMALIZER (FIXED UNIVERSAL)
+   NORMALIZER
 ========================= */
 
 function normalizeData(data) {
@@ -116,68 +130,25 @@ function normalizeData(data) {
 
   if (Array.isArray(data.Units)) {
     units = data.Units.map(u => ({
-      title: u.Title || `Unit ${u.Unit || ""}`,
+      title: u.Title || "",
       topics: (u.Topics || []).map(t => ({
-        topic: t.Topic || "Untitled Topic",
-        notes: normalizeNotes(t.Notes),
-        questions: normalizeQuestions(t.Practice_Questions)
+        topic: t.Topic || "",
+        notes: Array.isArray(t.Notes) ? t.Notes : [t.Notes],
+        questions: t.Practice_Questions || []
       }))
     }));
   } else if (Array.isArray(data.units)) {
     units = data.units.map(u => ({
-      title: u.title || `Unit ${u.unit_id || ""}`,
+      title: u.title || "",
       topics: (u.topics || []).map(t => ({
-        topic: t.name || t.topic || t.Topic || "Untitled Topic",
-        notes: normalizeNotes(
-          t.notes || t.key_terms || t.examples || t.key_concepts || ""
-        ),
-        questions: normalizeQuestions(
-          t.practice_questions || t.Practice_Questions
-        )
+        topic: t.topic || "",
+        notes: Array.isArray(t.notes) ? t.notes : [],
+        questions: t.practice_questions || []
       }))
     }));
   }
 
   return { units };
-}
-
-/* =========================
-   NOTES
-========================= */
-
-function normalizeNotes(notes) {
-  if (!notes) return [];
-
-  if (typeof notes === "string") return [notes];
-
-  if (Array.isArray(notes)) {
-    return notes.map(n =>
-      typeof n === "string"
-        ? n
-        : n.title && n.content
-        ? `${n.title}: ${n.content}`
-        : n.term && n.definition
-        ? `${n.term}: ${n.definition}`
-        : JSON.stringify(n)
-    );
-  }
-
-  return [];
-}
-
-/* =========================
-   QUESTIONS
-========================= */
-
-function normalizeQuestions(qs) {
-  if (!Array.isArray(qs)) return [];
-
-  return qs.map(q => ({
-    question: q.question || q.Question || "No question",
-    choices: q.choices || q.Choices || [],
-    answer: q.answer ?? q.Answer ?? 0,
-    explanation: q.explanation || ""
-  }));
 }
 
 /* =========================
@@ -188,15 +159,11 @@ function openClass(className) {
   goTo("classPage");
   document.getElementById("classTitle").innerText = className;
 
-  currentTheme = themeMap[className] || themeMap.default;
-  applyTheme(currentTheme);
+  const theme = themeMap[className] || themeMap.default;
+  applyTheme(theme);
 
   const raw = dataRegistry[className];
-
-  if (!raw) {
-    renderEmpty();
-    return;
-  }
+  if (!raw) return renderEmpty();
 
   const data = normalizeData(raw);
 
@@ -206,7 +173,7 @@ function openClass(className) {
 }
 
 /* =========================
-   EMPTY STATE
+   EMPTY
 ========================= */
 
 function renderEmpty() {
@@ -220,17 +187,15 @@ function renderEmpty() {
 ========================= */
 
 function renderNotes(data) {
-  const container = document.getElementById("notesTab");
+  let html = `<h3>📚 Study Guide</h3>`;
 
-  let html = `<h3 style="color:var(--theme)">📚 Study Guide</h3>`;
+  data.units.forEach(u => {
+    html += `<h2>${u.title}</h2>`;
 
-  data.units.forEach(unit => {
-    html += `<h2>${unit.title}</h2>`;
+    u.topics.forEach(t => {
+      html += `<h3>${t.topic}</h3><ul>`;
 
-    unit.topics.forEach(topic => {
-      html += `<h3 style="color:var(--theme)">${topic.topic}</h3><ul>`;
-
-      topic.notes.forEach(n => {
+      (t.notes || []).forEach(n => {
         html += `<li>${n}</li>`;
       });
 
@@ -238,11 +203,11 @@ function renderNotes(data) {
     });
   });
 
-  container.innerHTML = html;
+  document.getElementById("notesTab").innerHTML = html;
 }
 
 /* =========================
-   QUIZ SYSTEM
+   QUIZ (FIXED)
 ========================= */
 
 let quizBank = [];
@@ -254,9 +219,7 @@ function renderQuiz(data) {
 
   data.units.forEach(u => {
     u.topics.forEach(t => {
-      if (Array.isArray(t.questions)) {
-        quizBank.push(...t.questions);
-      }
+      if (Array.isArray(t.questions)) quizBank.push(...t.questions);
     });
   });
 
@@ -268,7 +231,7 @@ function showQuestion() {
   const container = document.getElementById("quizTab");
 
   if (!quizBank.length) {
-    container.innerHTML = "<p>No quiz questions</p>";
+    container.innerHTML = "<p>No quiz</p>";
     return;
   }
 
@@ -280,14 +243,18 @@ function showQuestion() {
   currentQ = quizBank[quizIndex];
 
   let html = `
-    <h3 style="color:var(--theme)">Question</h3>
+    <h3>Question</h3>
     <p>${currentQ.question}</p>
   `;
 
-  (currentQ.choices || []).forEach((c, i) => {
-    html += `
-      <button class="game-btn" onclick="answer(${i})">${c}</button>
-    `;
+  const choices =
+    currentQ.choices ||
+    currentQ.Choices ||
+    currentQ.options ||
+    [];
+
+  choices.forEach((c, i) => {
+    html += `<button class="game-btn" onclick="answer(${i})">${c}</button>`;
   });
 
   html += `<p id="fb"></p>`;
@@ -295,18 +262,22 @@ function showQuestion() {
   container.innerHTML = html;
 }
 
+/* ✅ FIXED ANSWER FUNCTION */
 function answer(i) {
   const fb = document.getElementById("fb");
 
-  fb.innerText =
-    i === currentQ.answer ? "✅ Correct" : "❌ Wrong";
+  const correctAnswer = Number(currentQ.answer);
+
+  const isCorrect = i === correctAnswer;
+
+  fb.innerText = isCorrect ? "✅ Correct" : "❌ Wrong";
 
   quizIndex++;
-  setTimeout(showQuestion, 800);
+  setTimeout(showQuestion, 600);
 }
 
 /* =========================
-   GAME SYSTEM (PATH MODE)
+   GAME (PATH)
 ========================= */
 
 let gameState = {
@@ -318,23 +289,19 @@ let gameState = {
 
 function buildGameQuestions(data) {
   let qs = [];
-
   data.units.forEach(u => {
     u.topics.forEach(t => {
       if (Array.isArray(t.questions)) qs.push(...t.questions);
     });
   });
-
   return qs;
 }
 
 function renderGame(data) {
-  const container = document.getElementById("gameTab");
-
   gameState.questions = buildGameQuestions(data);
 
   if (!gameState.questions.length) {
-    container.innerHTML = "<p>No game available</p>";
+    document.getElementById("gameTab").innerHTML = "<p>No game available</p>";
     return;
   }
 
@@ -343,18 +310,14 @@ function renderGame(data) {
 }
 
 function drawGame() {
-  let html = `
-    <div class="game-wrapper">
-      <div class="game-goal">GOAL</div>
-      <div class="game-path">
-  `;
+  let html = `<div class="game-wrapper">
+    <div class="game-goal">GOAL</div>
+    <div class="game-path">`;
 
   for (let i = 0; i < gameState.pathLength; i++) {
-    html += `
-      <div class="game-node">
-        ${i === gameState.position ? `<div class="player"></div>` : ""}
-      </div>
-    `;
+    html += `<div class="game-node">
+      ${i === gameState.position ? `<div class="player"></div>` : ""}
+    </div>`;
   }
 
   html += `</div></div><div id="game-q"></div>`;
@@ -363,32 +326,23 @@ function drawGame() {
 }
 
 function nextGameQuestion() {
-  const q =
-    gameState.questions[
-      Math.floor(Math.random() * gameState.questions.length)
-    ];
-
+  const q = gameState.questions[Math.floor(Math.random() * gameState.questions.length)];
   gameState.current = q;
 
-  const box = document.getElementById("game-q");
-
-  let html = `<h3 style="color:var(--theme)">${q.question}</h3>`;
+  let html = `<h3>${q.question}</h3>`;
 
   (q.choices || []).forEach((c, i) => {
     html += `<button class="game-btn" onclick="gameAnswer(${i})">${c}</button>`;
   });
 
-  box.innerHTML = html;
+  document.getElementById("game-q").innerHTML = html;
 }
 
 function gameAnswer(i) {
   if (i === gameState.current.answer) {
     gameState.position = Math.max(0, gameState.position - 1);
   } else {
-    gameState.position = Math.min(
-      gameState.pathLength - 1,
-      gameState.position + 1
-    );
+    gameState.position = Math.min(gameState.pathLength - 1, gameState.position + 1);
   }
 
   drawGame();
@@ -399,7 +353,7 @@ function gameAnswer(i) {
    TABS
 ========================= */
 
-function showTab(tabId) {
+function showTab(id) {
   document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
-  document.getElementById(tabId).classList.add("active");
+  document.getElementById(id)?.classList.add("active");
 }

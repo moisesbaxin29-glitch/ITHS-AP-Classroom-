@@ -1,35 +1,5 @@
 {
   "course": "AP Macroeconomics",
-  "exam_info": {
-    "exam_format": {
-      "multiple_choice": {
-        "sections": 2,
-        "calculator": "Not allowed",
-        "question_count": 60
-      },
-      "free_response": {
-        "question_count": 3,
-        "calculator": "Not allowed"
-      },
-      "duration_minutes": 120
-    },
-    "skills_tested": [
-      "Economic principles",
-      "Graph interpretation",
-      "Macroeconomic models",
-      "Fiscal and monetary policy",
-      "International trade",
-      "Economic indicators"
-    ],
-    "scoring": {
-      "scale": "1-5",
-      "breakdown": {
-        "multiple_choice_weight": 0.66,
-        "free_response_weight": 0.34
-      }
-    }
-  },
-
   "units": [
     {
       "unit_id": 1,
@@ -43,32 +13,21 @@
             "Opportunity cost is the next best alternative forgone.",
             "Trade-offs exist in all decisions."
           ],
-          "formulas": [
-            "Opportunity Cost = What is given up / What is gained"
-          ],
-          "examples": [
-            "Choosing college over working = lost wages as opportunity cost"
-          ],
           "practice_questions": [
             {
               "question": "What is opportunity cost?",
-              "answer": "The next best alternative forgone",
-              "explanation": "It measures what you give up when making a choice."
+              "choices": [
+                "Total monetary cost",
+                "The next best alternative forgone",
+                "Only explicit costs",
+                "Government tax rate"
+              ],
+              "answer": 1,
+              "explanation": "It represents the value of the next best alternative you give up."
             }
-          ],
-          "common_mistakes": [
-            "Confusing opportunity cost with money cost only"
           ]
         }
-      ],
-      "unit_review": {
-        "key_concepts": [
-          "Scarcity drives all economic decisions",
-          "Opportunity cost applies to every choice"
-        ],
-        "practice_test": [],
-        "flashcards": []
-      }
+      ]
     },
 
     {
@@ -83,33 +42,21 @@
             "Real GDP adjusts for inflation.",
             "Growth rate shows economic expansion."
           ],
-          "formulas": [
-            "GDP = C + I + G + (X - M)",
-            "Real GDP = Nominal GDP / Price Index × 100"
-          ],
-          "examples": [
-            "If GDP increases, economy is expanding"
-          ],
           "practice_questions": [
             {
               "question": "What does GDP measure?",
-              "answer": "Total output of goods and services",
-              "explanation": "It reflects overall economic activity."
+              "choices": [
+                "Government debt only",
+                "Total output of goods and services",
+                "Inflation rate",
+                "Interest rates"
+              ],
+              "answer": 1,
+              "explanation": "GDP measures total economic output."
             }
-          ],
-          "common_mistakes": [
-            "Confusing GDP with GNP"
           ]
         }
-      ],
-      "unit_review": {
-        "key_concepts": [
-          "GDP measures production",
-          "Real GDP adjusts for inflation"
-        ],
-        "practice_test": [],
-        "flashcards": []
-      }
+      ]
     },
 
     {
@@ -124,32 +71,21 @@
             "CPI measures inflation.",
             "Demand-pull vs cost-push inflation."
           ],
-          "formulas": [
-            "Inflation Rate = (CPI2 - CPI1) / CPI1 × 100"
-          ],
-          "examples": [
-            "Higher demand increases inflation"
-          ],
           "practice_questions": [
             {
               "question": "What causes demand-pull inflation?",
-              "answer": "Increase in aggregate demand",
-              "explanation": "Too much spending causes prices to rise."
+              "choices": [
+                "Decrease in taxes",
+                "Increase in aggregate demand",
+                "Decrease in wages",
+                "Lower production costs"
+              ],
+              "answer": 1,
+              "explanation": "Too much demand pushes prices up."
             }
-          ],
-          "common_mistakes": [
-            "Mixing inflation with price level"
           ]
         }
-      ],
-      "unit_review": {
-        "key_concepts": [
-          "Inflation reduces purchasing power",
-          "CPI measures price changes"
-        ],
-        "practice_test": [],
-        "flashcards": []
-      }
+      ]
     },
 
     {
@@ -161,35 +97,24 @@
           "name": "Government Spending and Taxes",
           "notes": [
             "Fiscal policy uses taxes and spending.",
-            "Expansionary = increase spending or cut taxes.",
-            "Contractionary = decrease spending or raise taxes."
-          ],
-          "formulas": [
-            "Multiplier = 1 / (1 - MPC)"
-          ],
-          "examples": [
-            "Tax cuts increase consumption"
+            "Expansionary increases demand.",
+            "Contractionary reduces inflation."
           ],
           "practice_questions": [
             {
               "question": "What is expansionary fiscal policy?",
-              "answer": "Increase government spending or lower taxes",
-              "explanation": "Used to boost economy during recession."
+              "choices": [
+                "Increase taxes",
+                "Decrease government spending",
+                "Increase spending or cut taxes",
+                "Raise interest rates"
+              ],
+              "answer": 2,
+              "explanation": "It stimulates economic growth."
             }
-          ],
-          "common_mistakes": [
-            "Confusing fiscal and monetary policy"
           ]
         }
-      ],
-      "unit_review": {
-        "key_concepts": [
-          "Fiscal policy is government action",
-          "Affects aggregate demand"
-        ],
-        "practice_test": [],
-        "flashcards": []
-      }
+      ]
     },
 
     {
@@ -201,34 +126,23 @@
           "name": "Federal Reserve Tools",
           "notes": [
             "Fed controls money supply.",
-            "Tools: reserve requirement, discount rate, open market operations."
-          ],
-          "formulas": [
-            "Money Multiplier = 1 / reserve requirement"
-          ],
-          "examples": [
-            "Buying bonds increases money supply"
+            "Uses open market operations, reserve ratio, discount rate."
           ],
           "practice_questions": [
             {
-              "question": "What happens when Fed buys bonds?",
-              "answer": "Money supply increases",
-              "explanation": "Injects money into economy."
+              "question": "What happens when the Fed buys bonds?",
+              "choices": [
+                "Money supply decreases",
+                "Money supply increases",
+                "Interest rates increase",
+                "Taxes increase"
+              ],
+              "answer": 1,
+              "explanation": "Buying bonds injects money into the economy."
             }
-          ],
-          "common_mistakes": [
-            "Confusing bond buying with selling"
           ]
         }
-      ],
-      "unit_review": {
-        "key_concepts": [
-          "Fed controls interest rates",
-          "Money supply affects inflation"
-        ],
-        "practice_test": [],
-        "flashcards": []
-      }
+      ]
     },
 
     {
@@ -242,67 +156,21 @@
             "Countries specialize in lowest opportunity cost goods.",
             "Trade increases efficiency."
           ],
-          "formulas": [
-            "Opportunity Cost comparison determines advantage"
-          ],
-          "examples": [
-            "US produces tech, China produces textiles"
-          ],
           "practice_questions": [
             {
               "question": "What is comparative advantage?",
-              "answer": "Ability to produce at lower opportunity cost",
-              "explanation": "Leads to specialization and trade."
+              "choices": [
+                "Ability to produce more goods overall",
+                "Ability to produce at lower opportunity cost",
+                "Government trade restriction",
+                "High production cost advantage"
+              ],
+              "answer": 1,
+              "explanation": "It means producing at lower opportunity cost."
             }
-          ],
-          "common_mistakes": [
-            "Confusing absolute vs comparative advantage"
           ]
         }
-      ],
-      "unit_review": {
-        "key_concepts": [
-          "Trade increases total output",
-          "Comparative advantage drives specialization"
-        ],
-        "practice_test": [],
-        "flashcards": []
-      }
-    }
-  ],
-
-  "formula_sheet": [
-    {
-      "category": "Macroeconomics",
-      "formulas": [
-        "GDP = C + I + G + (X - M)",
-        "Inflation Rate = (CPI2 - CPI1) / CPI1 × 100",
-        "Multiplier = 1 / (1 - MPC)"
       ]
-    }
-  ],
-
-  "study_plan": {
-    "daily_schedule": [],
-    "weekly_goals": [],
-    "progress_tracking": {
-      "units_completed": [],
-      "practice_scores": []
-    }
-  },
-
-  "practice_resources": {
-    "past_exams": [],
-    "question_bank": [],
-    "flashcards": []
-  },
-
-  "mistake_log": [
-    {
-      "date": "",
-      "topic": "",
-      "mistake": "",
-      "correction": ""
     }
   ]
 }
