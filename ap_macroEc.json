@@ -3,281 +3,305 @@
   "exam_info": {
     "exam_format": {
       "multiple_choice": {
-        "question_count": 60,
-        "time_minutes": 70
+        "sections": 2,
+        "calculator": "Not allowed",
+        "question_count": 60
       },
       "free_response": {
         "question_count": 3,
-        "time_minutes": 60
-      }
+        "calculator": "Not allowed"
+      },
+      "duration_minutes": 120
     },
     "skills_tested": [
-      "Economic Growth",
-      "Unemployment",
-      "Inflation",
-      "Fiscal Policy",
-      "Monetary Policy",
-      "International Trade",
-      "Aggregate Demand and Supply",
-      "Macroeconomic Equilibrium"
+      "Economic principles",
+      "Graph interpretation",
+      "Macroeconomic models",
+      "Fiscal and monetary policy",
+      "International trade",
+      "Economic indicators"
     ],
     "scoring": {
       "scale": "1-5",
-      "weights": {
-        "multiple_choice": 0.66,
-        "free_response": 0.33
+      "breakdown": {
+        "multiple_choice_weight": 0.66,
+        "free_response_weight": 0.34
       }
     }
   },
+
   "units": [
     {
       "unit_id": 1,
       "title": "Basic Economic Concepts",
-      "key_concepts": [
-        "Scarcity",
-        "Opportunity Cost",
-        "Production Possibilities Curve",
-        "Economic Systems"
-      ],
       "topics": [
         {
           "topic_id": "1.1",
           "name": "Scarcity and Opportunity Cost",
           "notes": [
-            "Scarcity: The fundamental problem of limited resources",
-            "Opportunity Cost: The value of the next best alternative forgone"
+            "Scarcity means unlimited wants with limited resources.",
+            "Opportunity cost is the next best alternative forgone.",
+            "Trade-offs exist in all decisions."
           ],
-          "key_terms": [
-            "Scarcity",
-            "Opportunity Cost",
-            "Trade-Off"
+          "formulas": [
+            "Opportunity Cost = What is given up / What is gained"
           ],
           "examples": [
-            "Choosing between spending money on a concert ticket or saving it for future use"
+            "Choosing college over working = lost wages as opportunity cost"
           ],
           "practice_questions": [
             {
-              "question": "Which of the following best describes the concept of opportunity cost?",
-              "choices": [
-                "The cost of all the alternatives you have to forgo when making a decision",
-                "The actual amount of money you spend on a good or service",
-                "The value of the best alternative that is forgone when a decision is made",
-                "The amount of money you save by choosing a particular alternative"
-              ],
-              "answer": 2,
-              "explanation": "Opportunity cost refers to the value of the best alternative that is forgone when a decision is made."
-            },
-            {
-              "question": "What does the Production Possibilities Curve (PPC) illustrate?",
-              "choices": [
-                "The maximum output combinations of two goods given limited resources",
-                "The relationship between inflation and unemployment",
-                "The cost of all available alternatives",
-                "The total production of an economy over time"
-              ],
-              "answer": 0,
-              "explanation": "The PPC illustrates the maximum output combinations of two goods that an economy can produce given limited resources."
-            },
-            {
-              "question": "In a market economy, which of the following is the primary factor that determines the allocation of resources?",
-              "choices": [
-                "Government regulation",
-                "Consumer preferences and market forces",
-                "Resource availability",
-                "Central planning by the government"
-              ],
-              "answer": 1,
-              "explanation": "In a market economy, resources are allocated based on consumer preferences and the interaction of market forces (supply and demand)."
+              "question": "What is opportunity cost?",
+              "answer": "The next best alternative forgone",
+              "explanation": "It measures what you give up when making a choice."
             }
+          ],
+          "common_mistakes": [
+            "Confusing opportunity cost with money cost only"
           ]
         }
       ],
       "unit_review": {
-        "summary": "This unit introduces basic economic concepts like scarcity, opportunity cost, and economic systems. It lays the foundation for understanding how individuals and societies make choices about resource allocation.",
-        "key_points": [
-          "Scarcity is the fundamental problem in economics.",
-          "Opportunity cost is central to decision-making.",
-          "The PPC shows the trade-offs between different goods."
+        "key_concepts": [
+          "Scarcity drives all economic decisions",
+          "Opportunity cost applies to every choice"
         ],
-        "practice_test": []
+        "practice_test": [],
+        "flashcards": []
       }
     },
+
     {
       "unit_id": 2,
-      "title": "Measurement of Economic Performance",
-      "key_concepts": [
-        "Gross Domestic Product (GDP)",
-        "Unemployment",
-        "Inflation",
-        "Business Cycles"
-      ],
+      "title": "Economic Indicators",
       "topics": [
         {
           "topic_id": "2.1",
-          "name": "Gross Domestic Product (GDP)",
+          "name": "GDP and Economic Growth",
           "notes": [
-            "GDP: Total market value of all final goods and services produced within a country in a given period",
-            "Real vs. Nominal GDP",
-            "GDP Deflator"
+            "GDP measures total value of goods and services produced.",
+            "Real GDP adjusts for inflation.",
+            "Growth rate shows economic expansion."
           ],
-          "key_terms": [
-            "GDP",
-            "Nominal GDP",
-            "Real GDP",
-            "GDP Deflator"
+          "formulas": [
+            "GDP = C + I + G + (X - M)",
+            "Real GDP = Nominal GDP / Price Index × 100"
           ],
           "examples": [
-            "Real GDP adjusts for inflation, while Nominal GDP does not."
+            "If GDP increases, economy is expanding"
           ],
           "practice_questions": [
             {
-              "question": "Which of the following is NOT included in the calculation of GDP?",
-              "choices": [
-                "The purchase of a new car",
-                "The purchase of a used car",
-                "The value of a new home built in the current year",
-                "The purchase of a service such as haircuts"
-              ],
-              "answer": 1,
-              "explanation": "Used goods, such as a used car, are not included in the calculation of GDP because they were already counted in a previous year."
-            },
-            {
-              "question": "Which measure of GDP accounts for inflation?",
-              "choices": [
-                "Nominal GDP",
-                "Real GDP",
-                "GDP Deflator",
-                "Unemployment Rate"
-              ],
-              "answer": 1,
-              "explanation": "Real GDP accounts for inflation and provides a more accurate reflection of an economy's output over time."
-            },
-            {
-              "question": "What does the GDP Deflator measure?",
-              "choices": [
-                "The percentage change in the GDP from year to year",
-                "The difference between nominal and real GDP",
-                "The inflation rate in a given year",
-                "The amount of government spending in the economy"
-              ],
-              "answer": 1,
-              "explanation": "The GDP Deflator measures the difference between nominal GDP (unadjusted for inflation) and real GDP (adjusted for inflation)."
+              "question": "What does GDP measure?",
+              "answer": "Total output of goods and services",
+              "explanation": "It reflects overall economic activity."
             }
+          ],
+          "common_mistakes": [
+            "Confusing GDP with GNP"
           ]
         }
       ],
       "unit_review": {
-        "summary": "This unit covers how we measure a country's economic performance using indicators like GDP, inflation, and unemployment. It also introduces the concepts of business cycles and economic growth.",
-        "key_points": [
-          "GDP measures the total market value of all final goods and services.",
-          "Real GDP is adjusted for inflation, while Nominal GDP is not.",
-          "The GDP Deflator is used to account for inflation in GDP."
-        ]
+        "key_concepts": [
+          "GDP measures production",
+          "Real GDP adjusts for inflation"
+        ],
+        "practice_test": [],
+        "flashcards": []
       }
     },
+
     {
       "unit_id": 3,
-      "title": "National Income and Price Determination",
-      "key_concepts": [
-        "Aggregate Demand",
-        "Aggregate Supply",
-        "Macroeconomic Equilibrium",
-        "Price Levels"
-      ],
+      "title": "Inflation and Unemployment",
       "topics": [
         {
           "topic_id": "3.1",
-          "name": "Aggregate Demand and Supply",
+          "name": "Inflation",
           "notes": [
-            "Aggregate Demand (AD): Total demand for goods and services in an economy at different price levels",
-            "Aggregate Supply (AS): Total supply of goods and services in an economy at different price levels"
+            "Inflation is general rise in price level.",
+            "CPI measures inflation.",
+            "Demand-pull vs cost-push inflation."
           ],
-          "key_terms": [
-            "Aggregate Demand",
-            "Aggregate Supply",
-            "Macroeconomic Equilibrium"
+          "formulas": [
+            "Inflation Rate = (CPI2 - CPI1) / CPI1 × 100"
           ],
           "examples": [
-            "A shift in the AD curve could result from changes in consumer spending or government policy."
+            "Higher demand increases inflation"
           ],
           "practice_questions": [
             {
-              "question": "Which of the following will cause a shift to the right in the Aggregate Demand curve?",
-              "choices": [
-                "An increase in the interest rate",
-                "A decrease in government spending",
-                "An increase in consumer confidence and spending",
-                "A decrease in exports"
-              ],
-              "answer": 2,
-              "explanation": "An increase in consumer confidence leads to more consumer spending, shifting the Aggregate Demand curve to the right."
-            },
-            {
-              "question": "What is the most likely effect of an increase in the cost of production on the Aggregate Supply curve?",
-              "choices": [
-                "It shifts the Aggregate Supply curve to the right",
-                "It shifts the Aggregate Supply curve to the left",
-                "It does not affect the Aggregate Supply curve",
-                "It shifts the Aggregate Demand curve to the right"
-              ],
-              "answer": 1,
-              "explanation": "An increase in the cost of production, such as higher wages or raw material costs, typically shifts the Aggregate Supply curve to the left."
-            },
-            {
-              "question": "At macroeconomic equilibrium, what must be true?",
-              "choices": [
-                "Aggregate Supply equals Aggregate Demand",
-                "Nominal GDP equals Real GDP",
-                "The unemployment rate is zero",
-                "The inflation rate is zero"
-              ],
-              "answer": 0,
-              "explanation": "At macroeconomic equilibrium, the total demand for goods and services (Aggregate Demand) equals the total supply of goods and services (Aggregate Supply)."
+              "question": "What causes demand-pull inflation?",
+              "answer": "Increase in aggregate demand",
+              "explanation": "Too much spending causes prices to rise."
             }
+          ],
+          "common_mistakes": [
+            "Mixing inflation with price level"
           ]
         }
       ],
       "unit_review": {
-        "summary": "This unit focuses on the determinants of Aggregate Demand and Aggregate Supply, and how they determine the overall price level and output in the economy. It also explains macroeconomic equilibrium.",
-        "key_points": [
-          "Aggregate Demand represents total spending in the economy.",
-          "Aggregate Supply represents total production in the economy.",
-          "Macroeconomic equilibrium occurs when Aggregate Demand equals Aggregate Supply."
-        ]
+        "key_concepts": [
+          "Inflation reduces purchasing power",
+          "CPI measures price changes"
+        ],
+        "practice_test": [],
+        "flashcards": []
       }
     },
+
     {
       "unit_id": 4,
-      "title": "Inflation, Unemployment, and Stabilization Policies",
-      "key_concepts": [
-        "Inflation",
-        "Unemployment",
-        "Fiscal Policy",
-        "Monetary Policy"
+      "title": "Fiscal Policy",
+      "topics": [
+        {
+          "topic_id": "4.1",
+          "name": "Government Spending and Taxes",
+          "notes": [
+            "Fiscal policy uses taxes and spending.",
+            "Expansionary = increase spending or cut taxes.",
+            "Contractionary = decrease spending or raise taxes."
+          ],
+          "formulas": [
+            "Multiplier = 1 / (1 - MPC)"
+          ],
+          "examples": [
+            "Tax cuts increase consumption"
+          ],
+          "practice_questions": [
+            {
+              "question": "What is expansionary fiscal policy?",
+              "answer": "Increase government spending or lower taxes",
+              "explanation": "Used to boost economy during recession."
+            }
+          ],
+          "common_mistakes": [
+            "Confusing fiscal and monetary policy"
+          ]
+        }
       ],
-      "topics": [],
-      "unit_review": {}
+      "unit_review": {
+        "key_concepts": [
+          "Fiscal policy is government action",
+          "Affects aggregate demand"
+        ],
+        "practice_test": [],
+        "flashcards": []
+      }
+    },
+
+    {
+      "unit_id": 5,
+      "title": "Monetary Policy",
+      "topics": [
+        {
+          "topic_id": "5.1",
+          "name": "Federal Reserve Tools",
+          "notes": [
+            "Fed controls money supply.",
+            "Tools: reserve requirement, discount rate, open market operations."
+          ],
+          "formulas": [
+            "Money Multiplier = 1 / reserve requirement"
+          ],
+          "examples": [
+            "Buying bonds increases money supply"
+          ],
+          "practice_questions": [
+            {
+              "question": "What happens when Fed buys bonds?",
+              "answer": "Money supply increases",
+              "explanation": "Injects money into economy."
+            }
+          ],
+          "common_mistakes": [
+            "Confusing bond buying with selling"
+          ]
+        }
+      ],
+      "unit_review": {
+        "key_concepts": [
+          "Fed controls interest rates",
+          "Money supply affects inflation"
+        ],
+        "practice_test": [],
+        "flashcards": []
+      }
+    },
+
+    {
+      "unit_id": 6,
+      "title": "International Trade",
+      "topics": [
+        {
+          "topic_id": "6.1",
+          "name": "Comparative Advantage",
+          "notes": [
+            "Countries specialize in lowest opportunity cost goods.",
+            "Trade increases efficiency."
+          ],
+          "formulas": [
+            "Opportunity Cost comparison determines advantage"
+          ],
+          "examples": [
+            "US produces tech, China produces textiles"
+          ],
+          "practice_questions": [
+            {
+              "question": "What is comparative advantage?",
+              "answer": "Ability to produce at lower opportunity cost",
+              "explanation": "Leads to specialization and trade."
+            }
+          ],
+          "common_mistakes": [
+            "Confusing absolute vs comparative advantage"
+          ]
+        }
+      ],
+      "unit_review": {
+        "key_concepts": [
+          "Trade increases total output",
+          "Comparative advantage drives specialization"
+        ],
+        "practice_test": [],
+        "flashcards": []
+      }
     }
   ],
-  "practice_resources": {
-    "past_exams": [],
-    "question_bank": [],
-    "flashcards": []
-  },
+
+  "formula_sheet": [
+    {
+      "category": "Macroeconomics",
+      "formulas": [
+        "GDP = C + I + G + (X - M)",
+        "Inflation Rate = (CPI2 - CPI1) / CPI1 × 100",
+        "Multiplier = 1 / (1 - MPC)"
+      ]
+    }
+  ],
+
   "study_plan": {
-    "weekly_schedule": [],
-    "unit_goals": [],
+    "daily_schedule": [],
+    "weekly_goals": [],
     "progress_tracking": {
       "units_completed": [],
       "practice_scores": []
     }
   },
+
+  "practice_resources": {
+    "past_exams": [],
+    "question_bank": [],
+    "flashcards": []
+  },
+
   "mistake_log": [
     {
       "date": "",
-      "unit": "",
       "topic": "",
-      "error": "",
+      "mistake": "",
       "correction": ""
     }
   ]

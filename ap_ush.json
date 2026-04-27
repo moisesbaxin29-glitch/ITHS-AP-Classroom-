@@ -1,293 +1,279 @@
 {
-  "exam_structure": {
-    "section_1_part_a": {
-      "type": "Multiple Choice Questions (MCQs)",
-      "questions": 55,
-      "timing": "55 minutes",
-      "weight": "40%",
-      "description": "Questions appear in sets of 3–4 based on a primary or secondary source."
+  "course": "AP US History",
+  "exam_info": {
+    "exam_format": {
+      "multiple_choice": {
+        "sections": 1,
+        "question_count": 55,
+        "timing_minutes": 55
+      },
+      "short_answer": {
+        "question_count": 3,
+        "timing_minutes": 40
+      },
+      "document_based_question": {
+        "question_count": 1,
+        "timing_minutes": 60
+      },
+      "long_essay": {
+        "question_count": 1,
+        "timing_minutes": 40
+      }
     },
-    "section_1_part_b": {
-      "type": "Short Answer Questions (SAQs)",
-      "questions": 3,
-      "timing": "40 minutes",
-      "weight": "20%",
-      "description": "Q1 (required, secondary source), Q2 (required, primary source), Q3/4 (choice, no source)."
-    },
-    "section_2_part_a": {
-      "type": "Document-Based Question (DBQ)",
-      "questions": 1,
-      "timing": "60 minutes (includes 15m reading period)",
-      "weight": "25%",
-      "description": "Develop an argument based on 7 provided documents and outside knowledge."
-    },
-    "section_2_part_b": {
-      "type": "Long Essay Question (LEQ)",
-      "questions": 1,
-      "timing": "40 minutes",
-      "weight": "15%",
-      "description": "Choose 1 of 3 prompts covering different time periods."
+    "skills_tested": [
+      "Historical reasoning",
+      "Contextualization",
+      "Causation and continuity",
+      "Document analysis",
+      "Argument development"
+    ],
+    "scoring": {
+      "scale": "1-5",
+      "breakdown": {
+        "multiple_choice_weight": 0.40,
+        "free_response_weight": 0.60
+      }
     }
   },
-  "historical_thinking_skills": [
-    "Developments and Processes",
-    "Sourcing and Situation",
-    "Claims and Evidence in Sources",
-    "Contextualization",
-    "Making Connections (Comparison, Causation, Continuity/Change)",
-    "Argumentation"
-  ],
-  "periods": [
+
+  "units": [
     {
-      "id": 1,
-      "years": "1491-1607",
-      "weight": "4-6%",
-      "title": "American and Native American Beginnings",
-      "key_topics": [
-        "Maize cultivation",
-        "Columbian Exchange",
-        "Encomienda System",
-        "Spanish/French/Dutch/British colonization models"
-      ],
-      "summary": "Contact between Europeans, Native Americans, and Africans resulted in the Columbian Exchange and significant social, religious, and political changes.",
-      "practice_questions": [
+      "unit_id": 1,
+      "title": "Colonial America (1491–1607)",
+      "topics": [
         {
-          "question": "Which of the following best describes the Columbian Exchange?",
-          "choices": [
-            "A trade route between Europe, Africa, and the Americas",
-            "The transfer of plants, animals, and diseases between the Old and New Worlds",
-            "A colonial economic system",
-            "The first major attempt at European colonization"
+          "topic_id": "1.1",
+          "name": "Native Societies Before Contact",
+          "notes": [
+            "Indigenous societies were diverse with complex political and economic systems.",
+            "Agriculture, trade networks, and cultural traditions varied by region."
           ],
-          "answer": 1,
-          "explanation": "The Columbian Exchange was the widespread transfer of plants, animals, and diseases between the Americas, Europe, and Africa following Columbus' voyages."
+          "practice_questions": [
+            {
+              "question": "Which best describes Native American societies before European contact?",
+              "choices": [
+                "Uniform across all regions",
+                "Highly diverse and regionally adapted",
+                "Completely isolated from each other",
+                "Dependent on European trade"
+              ],
+              "answer": 1,
+              "explanation": "Native societies varied widely depending on geography and resources."
+            }
+          ]
         },
         {
-          "question": "Which system allowed Spanish settlers to control and exploit Native American labor?",
-          "choices": [
-            "The encomienda system",
-            "The plantation system",
-            "The feudal system",
-            "The indentured servant system"
+          "topic_id": "1.2",
+          "name": "European Exploration",
+          "notes": [
+            "European nations explored the Americas for wealth, land, and power.",
+            "Columbian Exchange introduced new goods, diseases, and populations."
           ],
-          "answer": 0,
-          "explanation": "The encomienda system granted Spanish settlers the right to extract labor from Native Americans in exchange for protection and conversion to Christianity."
-        },
-        {
-          "question": "Which of the following was a primary motivation for the early Spanish exploration of the Americas?",
-          "choices": [
-            "Searching for new trade routes to China",
-            "Spreading Christianity",
-            "Colonizing for agricultural purposes",
-            "Establishing an empire for commercial trade"
-          ],
-          "answer": 1,
-          "explanation": "The Spanish were motivated by the desire to spread Christianity to the indigenous peoples of the Americas, in addition to seeking wealth and territorial expansion."
+          "practice_questions": [
+            {
+              "question": "What was a major effect of the Columbian Exchange?",
+              "choices": [
+                "End of European exploration",
+                "Spread of diseases to Indigenous populations",
+                "Elimination of trade",
+                "Decline in agriculture"
+              ],
+              "answer": 1,
+              "explanation": "Diseases like smallpox devastated Native populations."
+            }
+          ]
         }
-      ]
-    },
-    {
-      "id": 2,
-      "years": "1607-1754",
-      "weight": "6-8%",
-      "title": "Colonial America",
-      "key_topics": [
-        "Chesapeake vs New England colonies",
-        "Middle Colonies",
-        "Transatlantic Trade",
-        "First Great Awakening",
-        "Enlightenment"
       ],
-      "summary": "Development of diverse colonial societies and the growth of slavery and trade networks.",
-      "practice_questions": [
-        {
-          "question": "Which of the following best describes the difference between the Chesapeake and New England colonies?",
-          "choices": [
-            "Chesapeake colonies focused on farming tobacco, while New England colonies focused on shipbuilding and fishing",
-            "Chesapeake colonies had a more diverse economy, while New England had a primarily agricultural economy",
-            "Chesapeake colonies had a larger slave population than New England",
-            "New England colonies were more economically dependent on enslaved labor than Chesapeake colonies"
-          ],
-          "answer": 0,
-          "explanation": "The Chesapeake colonies were mainly focused on tobacco farming, while New England colonies developed a more diversified economy based on fishing, shipbuilding, and small-scale farming."
-        },
-        {
-          "question": "What was one major effect of the transatlantic trade on colonial America?",
-          "choices": [
-            "The decline of the American Indian population",
-            "The growth of slavery in the colonies",
-            "The spread of Native American culture",
-            "The development of small-scale agricultural economies"
-          ],
-          "answer": 1,
-          "explanation": "The transatlantic trade helped fuel the growth of slavery in the colonies, particularly in the southern colonies where labor-intensive crops like tobacco and rice were grown."
-        },
-        {
-          "question": "Which religious movement emphasized individual relationships with God and led to the growth of new denominations in the American colonies?",
-          "choices": [
-            "The Great Awakening",
-            "The Enlightenment",
-            "The Reformation",
-            "The Second Great Awakening"
-          ],
-          "answer": 0,
-          "explanation": "The First Great Awakening was a religious revival movement that stressed personal piety and a direct relationship with God, leading to the establishment of new Christian denominations."
-        }
-      ]
+      "unit_review": {
+        "key_concepts": [
+          "Native diversity before colonization",
+          "Impact of European exploration",
+          "Columbian Exchange effects"
+        ]
+      }
     },
+
     {
-      "id": 3,
-      "years": "1754-1800",
-      "weight": "10-17%",
-      "title": "Revolution and the New Nation",
-      "key_topics": [
-        "French and Indian War",
-        "Stamp Act",
-        "Declaration of Independence",
-        "Articles of Confederation",
-        "Constitution & Bill of Rights",
-        "Washington/Adams Presidencies"
+      "unit_id": 2,
+      "title": "Colonial America (1607–1754)",
+      "topics": [
+        {
+          "topic_id": "2.1",
+          "name": "Jamestown and Early Colonies",
+          "notes": [
+            "Jamestown was the first permanent English settlement.",
+            "Colonies developed different economies (cash crops vs trade)."
+          ],
+          "practice_questions": [
+            {
+              "question": "Why was Jamestown initially struggling?",
+              "choices": [
+                "Too much gold",
+                "Poor leadership and lack of food",
+                "Strong Native alliances",
+                "Overpopulation"
+              ],
+              "answer": 1,
+              "explanation": "Early settlers lacked survival skills and resources."
+            }
+          ]
+        }
       ],
-      "summary": "The shift from British subjects to independent citizens and the framing of a new national government.",
-      "practice_questions": [
-        {
-          "question": "What was the main cause of the French and Indian War?",
-          "choices": [
-            "Conflicting territorial claims between Britain and France in North America",
-            "The spread of European diseases among Native American populations",
-            "The emergence of new alliances between European powers",
-            "The influence of Native American resistance to colonial expansion"
-          ],
-          "answer": 0,
-          "explanation": "The French and Indian War was primarily fought over territorial disputes between Britain and France in North America, with both sides seeking control of key regions."
-        },
-        {
-          "question": "What was the purpose of the Stamp Act of 1765?",
-          "choices": [
-            "To raise funds to pay for British troops stationed in the colonies",
-            "To regulate colonial trade with Native Americans",
-            "To restrict colonial manufacturing",
-            "To encourage colonial settlement in western territories"
-          ],
-          "answer": 0,
-          "explanation": "The Stamp Act was designed to raise revenue for Britain by taxing printed materials in the colonies, leading to widespread protests and resistance."
-        },
-        {
-          "question": "Which of the following was a result of the Articles of Confederation?",
-          "choices": [
-            "A strong central government with executive and judicial branches",
-            "The ability for the national government to regulate interstate trade",
-            "A weak central government with limited powers",
-            "The establishment of a national bank"
-          ],
-          "answer": 2,
-          "explanation": "The Articles of Confederation created a weak national government with limited powers, which led to problems like the inability to regulate trade and raise taxes."
-        }
-      ]
+      "unit_review": {
+        "key_concepts": [
+          "Differences between colonies",
+          "Economic development in the Americas"
+        ]
+      }
     },
+
     {
-      "id": 4,
-      "years": "1800-1848",
-      "weight": "10-17%",
-      "title": "Expansion and Reform",
-      "key_topics": [
-        "Market Revolution",
-        "Second Great Awakening",
-        "Andrew Jackson/Democrats vs Whigs",
-        "Missouri Compromise",
-        "Manifest Destiny"
+      "unit_id": 3,
+      "title": "American Revolution (1754–1800)",
+      "topics": [
+        {
+          "topic_id": "3.1",
+          "name": "Causes of Revolution",
+          "notes": [
+            "Taxation without representation was a major issue.",
+            "Events like the Boston Tea Party increased tensions."
+          ],
+          "practice_questions": [
+            {
+              "question": "What was the main complaint of colonists against Britain?",
+              "choices": [
+                "Too much land",
+                "Taxation without representation",
+                "Too many alliances",
+                "Lack of trade"
+              ],
+              "answer": 1,
+              "explanation": "Colonists had no political representation in Parliament."
+            }
+          ]
+        }
       ],
-      "summary": "Territorial expansion, the rise of mass democracy, and significant social reform movements.",
-      "practice_questions": [
-        {
-          "question": "What was the primary result of the Market Revolution?",
-          "choices": [
-            "The rise of industrialization in the North",
-            "The expansion of slavery in the South",
-            "The increase in territorial disputes with Native Americans",
-            "The rise of the women's suffrage movement"
-          ],
-          "answer": 0,
-          "explanation": "The Market Revolution led to the rise of industrialization in the North, with innovations like the telegraph and steam engine transforming the economy."
-        },
-        {
-          "question": "Which event marked the beginning of the movement for women’s rights in the U.S.?",
-          "choices": [
-            "The Seneca Falls Convention",
-            "The publication of 'The Feminine Mystique'",
-            "The ratification of the 19th Amendment",
-            "The Second Great Awakening"
-          ],
-          "answer": 0,
-          "explanation": "The Seneca Falls Convention of 1848 is considered the beginning of the formal women's rights movement in the U.S."
-        },
-        {
-          "question": "Which doctrine justified U.S. territorial expansion during the 19th century?",
-          "choices": [
-            "The Monroe Doctrine",
-            "Manifest Destiny",
-            "The Doctrine of Nullification",
-            "The Doctrine of Popular Sovereignty"
-          ],
-          "answer": 1,
-          "explanation": "Manifest Destiny was the belief that the U.S. was destined to expand across the North American continent, justifying territorial acquisitions."
-        }
-      ]
+      "unit_review": {
+        "key_concepts": [
+          "Causes of revolution",
+          "British colonial policies",
+          "Colonial resistance"
+        ]
+      }
     },
+
     {
-      "id": 5,
-      "years": "1844-1877",
-      "weight": "10-17%",
+      "unit_id": 4,
+      "title": "Constitution and Early Republic",
+      "topics": [
+        {
+          "topic_id": "4.1",
+          "name": "U.S. Constitution",
+          "notes": [
+            "Created to replace the Articles of Confederation.",
+            "Established separation of powers and federalism."
+          ],
+          "practice_questions": [
+            {
+              "question": "What problem did the Constitution solve?",
+              "choices": [
+                "No national army",
+                "Weak central government under Articles of Confederation",
+                "No states",
+                "No economy"
+              ],
+              "answer": 1,
+              "explanation": "The Articles created a weak federal system."
+            }
+          ]
+        }
+      ],
+      "unit_review": {
+        "key_concepts": [
+          "Federalism",
+          "Constitutional structure",
+          "Checks and balances"
+        ]
+      }
+    },
+
+    {
+      "unit_id": 5,
       "title": "Civil War and Reconstruction",
-      "key_topics": [
-        "Mexican-American War",
-        "Compromise of 1850",
-        "Kansas-Nebraska Act",
-        "Civil War",
-        "13/14/15 Amendments",
-        "Reconstruction's failure"
-      ],
-      "summary": "Increasing sectionalism over slavery leading to war, and the subsequent struggle to rebuild and redefine the Union.",
-      "practice_questions": [
+      "topics": [
         {
-          "question": "What was the outcome of the Mexican-American War?",
-          "choices": [
-            "The U.S. acquired Texas and the Southwest",
-            "The U.S. lost significant territory to Mexico",
-            "The U.S. gained the Northwest Territory",
-            "The U.S. divided Oregon with Great Britain"
+          "topic_id": "5.1",
+          "name": "Causes of Civil War",
+          "notes": [
+            "Slavery was the central issue dividing North and South.",
+            "States' rights also contributed to conflict."
           ],
-          "answer": 0,
-          "explanation": "The Mexican-American War led to the U.S. acquiring Texas and the territories that would become California, Arizona, New Mexico, and others through the Treaty of Guadalupe Hidalgo."
-        },
-        {
-          "question": "Which of the following was a key provision of the Compromise of 1850?",
-          "choices": [
-            "California admitted as a free state",
-            "A ban on slavery in all new U.S. territories",
-            "The abolition of slavery in Washington D.C.",
-            "The establishment of the Kansas-Nebraska Act"
-          ],
-          "answer": 0,
-          "explanation": "The Compromise of 1850 admitted California as a free state and included other provisions like the Fugitive Slave Act."
-        },
-        {
-          "question": "What did the 13th Amendment accomplish?",
-          "choices": [
-            "Abolished slavery",
-            "Granted women the right to vote",
-            "Protected voting rights for African Americans",
-            "Guaranteed civil rights for all citizens"
-          ],
-          "answer": 0,
-          "explanation": "The 13th Amendment, ratified in 1865, abolished slavery in the United States."
+          "practice_questions": [
+            {
+              "question": "What was the main cause of the Civil War?",
+              "choices": [
+                "Foreign invasion",
+                "Slavery",
+                "Trade disputes",
+                "Immigration"
+              ],
+              "answer": 1,
+              "explanation": "Slavery was the core political and economic conflict."
+            }
+          ]
         }
-      ]
+      ],
+      "unit_review": {
+        "key_concepts": [
+          "Slavery conflict",
+          "Sectionalism",
+          "Reconstruction policies"
+        ]
+      }
+    },
+
+    {
+      "unit_id": 6,
+      "title": "Industrialization and Gilded Age",
+      "topics": [
+        {
+          "topic_id": "6.1",
+          "name": "Industrial Growth",
+          "notes": [
+            "Rapid industrial growth led to urbanization.",
+            "Robber barons controlled major industries."
+          ],
+          "practice_questions": [
+            {
+              "question": "What is a robber baron?",
+              "choices": [
+                "A farmer",
+                "A powerful industrial capitalist",
+                "A soldier",
+                "A politician"
+              ],
+              "answer": 1,
+              "explanation": "They were wealthy industrialists accused of exploiting workers."
+            }
+          ]
+        }
+      ],
+      "unit_review": {
+        "key_concepts": [
+          "Industrialization",
+          "Urban growth",
+          "Labor movements"
+        ]
+      }
     }
   ],
-  "study_strategies": [
-    "Master the Rubric: Know exactly how to earn the Contextualization and Evidence points on the DBQ/LEQ.",
-    "Think in Themes: Track 'American Identity' or 'Politics and Power' across all 9 periods.",
-    "Practice Sourcing (HIPP): Historical Context, Intended Audience, Purpose, and Point of View."
-  ]
+
+  "study_plan": {
+    "daily_schedule": [],
+    "weekly_goals": [],
+    "progress_tracking": {
+      "units_completed": [],
+      "practice_scores": []
+    }
+  }
 }

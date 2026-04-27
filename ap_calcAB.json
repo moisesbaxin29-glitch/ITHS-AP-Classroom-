@@ -1,381 +1,275 @@
 {
-  "AP_Calculus_AB": {
-    "Units": [
-      {
-        "Unit": 1,
-        "Title": "Limits and Continuity",
-        "Topics": [
-          {
-            "Topic": "Understanding Limits",
-            "Key_Concepts": [
-              "Definition of a limit",
-              "One-sided limits",
-              "Limits at infinity"
-            ],
-            "Notes": "Limits describe the behavior of a function as the input approaches a certain value. This is foundational for understanding calculus concepts like derivatives and integrals.",
-            "Practice_Questions": [
-              {
-                "Question": "Find the limit of the function as x approaches 3: (x^2 - 9)/(x - 3).",
-                "Answer": "The limit is 6."
-              },
-              {
-                "Question": "Determine if the limit exists: lim(x→0) (sin(x)/x).",
-                "Answer": "The limit exists and is equal to 1."
-              },
-              {
-                "Question": "Find the limit of f(x) = 1/x as x approaches 0 from the positive side.",
-                "Answer": "The limit approaches infinity."
-              }
-            ]
-          },
-          {
-            "Topic": "Continuity",
-            "Key_Concepts": [
-              "Types of discontinuities",
-              "Intermediate Value Theorem"
-            ],
-            "Notes": "A function is continuous if it does not have any breaks, jumps, or holes. The Intermediate Value Theorem is important in proving the existence of roots of functions."
-          }
-        ]
+  "course": "AP Calculus BC",
+  "exam_info": {
+    "exam_format": {
+      "multiple_choice": {
+        "sections": 2,
+        "calculator": "Some sections allow graphing calculator",
+        "question_count": 45
       },
-      {
-        "Unit": 2,
-        "Title": "Differentiation: Definition and Fundamental Properties",
-        "Topics": [
-          {
-            "Topic": "Definition of the Derivative",
-            "Key_Concepts": [
-              "Derivative as a limit",
-              "Derivative as the slope of the tangent line"
-            ],
-            "Notes": "The derivative measures the rate of change of a function. It is defined as the limit of the average rate of change as the interval shrinks to zero."
-          },
-          {
-            "Topic": "Basic Derivatives and Rules",
-            "Key_Concepts": [
-              "Power rule",
-              "Product rule",
-              "Quotient rule",
-              "Chain rule"
-            ],
-            "Notes": "These are the basic rules to calculate derivatives of functions.",
-            "Practice_Questions": [
-              {
-                "Question": "Find the derivative of f(x) = 3x^2 + 2x + 1.",
-                "Answer": "f'(x) = 6x + 2."
-              },
-              {
-                "Question": "Find the derivative of f(x) = (x^2 + 1)(x - 3).",
-                "Answer": "f'(x) = 2x(x - 3) + (x^2 + 1)."
-              },
-              {
-                "Question": "Differentiate f(x) = (x^2 + 4x + 5) / (x + 1).",
-                "Answer": "f'(x) = (2x + 4)(x + 1) - (x^2 + 4x + 5)."
-              }
-            ]
-          },
-          {
-            "Topic": "Implicit Differentiation",
-            "Key_Concepts": [
-              "Derivatives of implicit functions",
-              "Using the chain rule"
-            ],
-            "Notes": "Implicit differentiation is used to find the derivative of equations that are not easily solved for one variable in terms of another."
-          }
-        ]
+      "free_response": {
+        "question_count": 6,
+        "calculator": "Mixed"
       },
-      {
-        "Unit": 3,
-        "Title": "Applications of Differentiation",
-        "Topics": [
-          {
-            "Topic": "Extrema and Critical Points",
-            "Key_Concepts": [
-              "First derivative test",
-              "Second derivative test"
-            ],
-            "Notes": "Critical points are where the derivative is zero or undefined. Extrema are the maximum and minimum values of a function.",
-            "Practice_Questions": [
-              {
-                "Question": "Find the critical points of f(x) = x^3 - 3x^2 + 2.",
-                "Answer": "Critical points are x = 0, x = 2."
-              },
-              {
-                "Question": "Using the second derivative test, determine whether the function f(x) = x^2 - 4x + 3 has a local maximum or minimum at x = 2.",
-                "Answer": "The second derivative is positive, so there is a local minimum at x = 2."
-              }
-            ]
-          },
-          {
-            "Topic": "Related Rates",
-            "Key_Concepts": [
-              "Solving related rates problems",
-              "Differentiation with respect to time"
-            ],
-            "Notes": "Related rates problems involve finding the rate of change of one variable in relation to another when both are changing over time.",
-            "Practice_Questions": [
-              {
-                "Question": "A balloon is inflated, and its radius is increasing at a rate of 2 cm/s. How fast is the volume of the balloon increasing when the radius is 5 cm?",
-                "Answer": "Use the formula for the volume of a sphere, V = (4/3)πr^3, and differentiate with respect to time."
-              }
-            ]
-          },
-          {
-            "Topic": "Linear Approximations and Differentials",
-            "Key_Concepts": [
-              "Linear approximation formula",
-              "Differentials and error estimation"
-            ],
-            "Notes": "Linear approximations are used to estimate the value of a function at a point near a known value."
-          }
-        ]
-      },
-      {
-        "Unit": 4,
-        "Title": "Integration",
-        "Topics": [
-          {
-            "Topic": "Definite Integrals",
-            "Key_Concepts": [
-              "Fundamental Theorem of Calculus",
-              "Properties of definite integrals"
-            ],
-            "Notes": "Definite integrals represent the area under a curve between two points. The Fundamental Theorem of Calculus connects differentiation and integration."
-          },
-          {
-            "Topic": "Indefinite Integrals and Antiderivatives",
-            "Key_Concepts": [
-              "Antiderivatives",
-              "Basic integration rules"
-            ],
-            "Notes": "Indefinite integrals represent a family of functions whose derivative is the integrand.",
-            "Practice_Questions": [
-              {
-                "Question": "Find the indefinite integral of f(x) = 3x^2 + 2x + 1.",
-                "Answer": "F(x) = x^3 + x^2 + x + C."
-              }
-            ]
-          },
-          {
-            "Topic": "Substitution and Integration by Parts",
-            "Key_Concepts": [
-              "U-substitution",
-              "Integration by parts"
-            ],
-            "Notes": "These techniques are used to simplify integrals and find antiderivatives that might be complex."
-          }
-        ]
-      },
-      {
-        "Unit": 5,
-        "Title": "Applications of Integrals",
-        "Topics": [
-          {
-            "Topic": "Area Between Curves",
-            "Key_Concepts": [
-              "Finding the area between curves",
-              "Using integrals to calculate area"
-            ],
-            "Notes": "The area between two curves can be found by subtracting the integral of the lower curve from the integral of the upper curve. This application is used when calculating areas in real-world situations where boundaries are given by different functions.",
-            "Practice_Questions": [
-              {
-                "Question": "Find the area between the curves y = x^2 and y = x.",
-                "Answer": "The area is ∫[0 to 1] (x - x^2) dx = 1/2."
-              },
-              {
-                "Question": "Find the area between the curves y = x^3 and y = 3x - x^2.",
-                "Answer": "The area is calculated by finding the intersection points and integrating between them."
-              }
-            ]
-          },
-          {
-            "Topic": "Volume of Solids of Revolution",
-            "Key_Concepts": [
-              "Using disks and washers to calculate volume",
-              "Shell method"
-            ],
-            "Notes": "The volume of a solid of revolution can be calculated using either the disk method or the washer method, depending on whether there is a hole in the solid. The disk method is used when the solid is formed by rotating a function about an axis, while the washer method is used when the solid has an inner radius and an outer radius. The shell method is another technique, where cylindrical shells are integrated.",
-            "Practice_Questions": [
-              {
-                "Question": "Find the volume of the solid generated by rotating the region bounded by y = x^2 and y = 0 about the x-axis from x = 0 to x = 2.",
-                "Answer": "Volume = π∫[0 to 2] (x^2)^2 dx = π∫[0 to 2] x^4 dx = 16π/5."
-              },
-              {
-                "Question": "Find the volume of the solid generated by rotating the region bounded by y = x^2 and y = 1 about the y-axis from x = 0 to x = 1.",
-                "Answer": "Volume = 2π∫[0 to 1] x(1 - x^2) dx."
-              }
-            ]
-          },
-          {
-            "Topic": "Arc Length and Surface Area",
-            "Key_Concepts": [
-              "Arc length formula",
-              "Surface area of revolution"
-            ],
-            "Notes": "The arc length of a curve is found using the formula L = ∫[a to b] √(1 + (dy/dx)^2) dx, and the surface area of a solid of revolution is calculated using a similar method. These applications are used in physical problems involving curves, such as calculating the length of a wire or the surface area of a tank.",
-            "Practice_Questions": [
-              {
-                "Question": "Find the length of the curve y = x^3 from x = 0 to x = 1.",
-                "Answer": "Use the arc length formula to calculate the integral of √(1 + (dy/dx)^2)."
-              },
-              {
-                "Question": "Find the surface area generated by rotating y = x^2 about the x-axis from x = 0 to x = 1.",
-                "Answer": "Use the surface area formula to integrate 2πy√(1 + (dy/dx)^2) dx."
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "Unit": 6,
-        "Title": "Differential Equations",
-        "Topics": [
-          {
-            "Topic": "Solving Differential Equations",
-            "Key_Concepts": [
-              "Separation of variables",
-              "First-order linear differential equations"
-            ],
-            "Notes": "Differential equations describe the relationship between a function and its rate of change. A first-order linear differential equation is one where the highest derivative is of first order, and the equation can often be solved using separation of variables, which involves separating the variables and integrating each side.",
-            "Practice_Questions": [
-              {
-                "Question": "Solve the differential equation dy/dx = 3x^2.",
-                "Answer": "Integrate both sides: y = x^3 + C."
-              },
-              {
-                "Question": "Solve the equation dy/dx = y/x.",
-                "Answer": "Separate the variables: (1/y) dy = (1/x) dx, and integrate to get ln|y| = ln|x| + C."
-              }
-            ]
-          },
-          {
-            "Topic": "Slope Fields and Euler's Method",
-            "Key_Concepts": [
-              "Graphing slope fields",
-              "Euler's method for approximating solutions"
-            ],
-            "Notes": "Slope fields graphically represent solutions to differential equations by plotting the slope of the function at various points. Euler's method is a numerical technique used to approximate the solutions to differential equations by using a step-by-step process to find values of the function at discrete points.",
-            "Practice_Questions": [
-              {
-                "Question": "Draw the slope field for the differential equation dy/dx = x - y.",
-                "Answer": "The slope at each point is given by the difference between x and y."
-              },
-              {
-                "Question": "Use Euler's method with step size h = 0.1 to approximate y(0.2) for the differential equation dy/dx = x^2 - y, with initial condition y(0) = 0.",
-                "Answer": "Use Euler's formula: y₁ = y₀ + h*f(x₀, y₀), and iterate for each step."
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "Unit": 7,
-        "Title": "Parametric, Polar, and Vector Functions",
-        "Topics": [
-          {
-            "Topic": "Parametric Equations",
-            "Key_Concepts": [
-              "Graphing parametric equations",
-              "Finding derivatives for parametric functions"
-            ],
-            "Notes": "Parametric equations represent the coordinates of points on a plane in terms of a third variable, usually time. These are useful when describing motion along a path. To find the derivative of a parametric function, we use the chain rule to differentiate with respect to the parameter and then divide the derivatives of the y and x components.",
-            "Practice_Questions": [
-              {
-                "Question": "Find the derivative of y = t^2 and x = t^3.",
-                "Answer": "dy/dx = (dy/dt) / (dx/dt) = 2t / 3t^2 = 2/(3t)."
-              },
-              {
-                "Question": "Graph the parametric equations x = cos(t), y = sin(t) for t in [0, 2π].",
-                "Answer": "This describes a circle with radius 1."
-              }
-            ]
-          },
-          {
-            "Topic": "Polar Coordinates and Graphs",
-            "Key_Concepts": [
-              "Polar coordinates system",
-              "Graphing polar equations"
-            ],
-            "Notes": "In polar coordinates, a point is described by a radius and an angle, rather than x and y coordinates. Polar equations often describe curves that cannot be easily expressed in Cartesian coordinates. Graphing polar equations involves plotting points based on the radius and angle.",
-            "Practice_Questions": [
-              {
-                "Question": "Graph the polar equation r = 2 + cos(θ).",
-                "Answer": "This describes a limacon with a loop."
-              },
-              {
-                "Question": "Find the area enclosed by the polar curve r = 3sin(θ).",
-                "Answer": "The area is ∫[0 to π] 1/2 * r^2 dθ."
-              }
-            ]
-          },
-          {
-            "Topic": "Vector Functions",
-            "Key_Concepts": [
-              "Vectors in 2D and 3D",
-              "Derivatives of vector functions"
-            ],
-            "Notes": "Vector functions describe the motion of a point in 2D or 3D space. The derivative of a vector function represents the velocity of the point in space. These functions can describe paths of moving objects, such as a particle moving along a curved path.",
-            "Practice_Questions": [
-              {
-                "Question": "Find the derivative of r(t) = <t^2, 2t, 3t^3>.",
-                "Answer": "r'(t) = <2t, 2, 9t^2>."
-              },
-              {
-                "Question": "Find the velocity vector for the particle at time t = 1 if the position vector is r(t) = <t^2, t^3>.",
-                "Answer": "r'(t) = <2t, 3t^2>, so r'(1) = <2, 3>."
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "Unit": 8,
-        "Title": "Infinite Sequences and Series",
-        "Topics": [
-          {
-            "Topic": "Sequences and Limits",
-            "Key_Concepts": [
-              "Understanding sequences",
-              "Limits of sequences"
-            ],
-            "Notes": "A sequence is an ordered list of numbers, and its behavior can be described by its limit.",
-            "Practice_Questions": [
-              {
-                "Question": "Find the limit of the sequence: 1/n.",
-                "Answer": "The limit is 0 as n approaches infinity."
-              }
-            ]
-          },
-          {
-            "Topic": "Series and Convergence Tests",
-            "Key_Concepts": [
-              "Geometric series",
-              "Convergence tests"
-            ],
-            "Notes": "A series is the sum of terms in a sequence. Convergence tests help determine whether the series converges or diverges.",
-            "Practice_Questions": [
-              {
-                "Question": "Determine if the geometric series 1 + 1/2 + 1/4 + 1/8 + ... converges.",
-                "Answer": "Yes, this geometric series converges with a sum of 2."
-              }
-            ]
-          },
-          {
-            "Topic": "Power Series",
-            "Key_Concepts": [
-              "Representation of functions as power series",
-              "Radius of convergence"
-            ],
-            "Notes": "Power series are used to represent functions as an infinite sum of terms, and the radius of convergence determines the values of x for which the series converges.",
-            "Practice_Questions": [
-              {
-                "Question": "Find the radius of convergence of the power series Σ (x^n/n!).",
-                "Answer": "The radius of convergence is infinite."
-              }
-            ]
-          }
-        ]
+      "duration_minutes": 180
+    },
+    "skills_tested": [
+      "Limits and continuity",
+      "Differentiation and applications",
+      "Integration and applications",
+      "Series and convergence",
+      "Parametric and polar functions",
+      "Vector functions"
+    ],
+    "scoring": {
+      "scale": "1-5",
+      "breakdown": {
+        "multiple_choice_weight": 0.5,
+        "free_response_weight": 0.5
       }
-    ]
-  }
+    }
+  },
+
+  "units": [
+    {
+      "unit_id": 1,
+      "title": "Limits and Continuity",
+      "topics": [
+        {
+          "topic_id": "1.1",
+          "name": "Understanding Limits",
+          "notes": [
+            "A limit describes the value a function approaches.",
+            "One-sided limits determine behavior from left or right.",
+            "Limits may exist even if function is undefined."
+          ],
+          "formulas": [
+            "lim(x→a) f(x) = L",
+            "lim(x→∞) f(x)"
+          ],
+          "examples": [
+            "lim(x→2) (x^2 - 4)/(x - 2) = 4"
+          ],
+          "practice_questions": [
+            {
+              "question": "Evaluate lim(x→3) (x^2 - 9)/(x - 3)",
+              "answer": "6",
+              "explanation": "Factor numerator: (x-3)(x+3), cancel, substitute x=3."
+            }
+          ],
+          "common_mistakes": [
+            "Forgetting to factor before substituting"
+          ]
+        }
+      ],
+      "unit_review": {
+        "key_concepts": [
+          "Limits define behavior near points",
+          "Continuity requires limit equals function value"
+        ],
+        "practice_test": [],
+        "flashcards": []
+      }
+    },
+
+    {
+      "unit_id": 2,
+      "title": "Derivatives",
+      "topics": [
+        {
+          "topic_id": "2.1",
+          "name": "Derivative Definition",
+          "notes": [
+            "Derivative measures instantaneous rate of change",
+            "Slope of tangent line"
+          ],
+          "formulas": [
+            "f'(x) = lim(h→0) (f(x+h) - f(x))/h"
+          ],
+          "examples": [
+            "Derivative of x^2 is 2x"
+          ],
+          "practice_questions": [
+            {
+              "question": "Find derivative of f(x)=x^3",
+              "answer": "3x^2",
+              "explanation": "Power rule: nx^(n-1)"
+            }
+          ],
+          "common_mistakes": [
+            "Forgetting to subtract 1 from exponent"
+          ]
+        }
+      ],
+      "unit_review": {
+        "key_concepts": [
+          "Derivatives represent rate of change",
+          "Use power, product, quotient, chain rules"
+        ],
+        "practice_test": [],
+        "flashcards": []
+      }
+    },
+
+    {
+      "unit_id": 3,
+      "title": "Integrals",
+      "topics": [
+        {
+          "topic_id": "3.1",
+          "name": "Fundamental Theorem of Calculus",
+          "notes": [
+            "Connects derivatives and integrals",
+            "Area under curve"
+          ],
+          "formulas": [
+            "∫ f(x) dx = F(x) + C",
+            "d/dx ∫ f(t) dt = f(x)"
+          ],
+          "examples": [
+            "∫ 2x dx = x^2 + C"
+          ],
+          "practice_questions": [
+            {
+              "question": "Find ∫ 3x^2 dx",
+              "answer": "x^3 + C",
+              "explanation": "Increase exponent and divide"
+            }
+          ],
+          "common_mistakes": [
+            "Forgetting +C"
+          ]
+        }
+      ],
+      "unit_review": {
+        "key_concepts": [
+          "Integration is reverse of differentiation",
+          "Used for area and accumulation"
+        ],
+        "practice_test": [],
+        "flashcards": []
+      }
+    },
+
+    {
+      "unit_id": 4,
+      "title": "Series and Sequences",
+      "topics": [
+        {
+          "topic_id": "4.1",
+          "name": "Convergence Tests",
+          "notes": [
+            "Determine if infinite series converges",
+            "Common tests: ratio, comparison, integral"
+          ],
+          "formulas": [
+            "Σ a_n",
+            "lim n→∞ a_n = 0 (necessary condition)"
+          ],
+          "examples": [
+            "Geometric series: a/(1-r)"
+          ],
+          "practice_questions": [
+            {
+              "question": "Does Σ 1/2^n converge?",
+              "answer": "Yes",
+              "explanation": "Geometric series with r<1"
+            }
+          ],
+          "common_mistakes": [
+            "Confusing divergence with divergence test failure"
+          ]
+        }
+      ],
+      "unit_review": {
+        "key_concepts": [
+          "Series may converge or diverge",
+          "Geometric and p-series are key types"
+        ],
+        "practice_test": [],
+        "flashcards": []
+      }
+    },
+
+    {
+      "unit_id": 5,
+      "title": "Parametric, Polar, and Vector Functions",
+      "topics": [
+        {
+          "topic_id": "5.1",
+          "name": "Parametric Equations",
+          "notes": [
+            "Functions defined by parameter t",
+            "Used for motion"
+          ],
+          "formulas": [
+            "dx/dt, dy/dt",
+            "dy/dx = (dy/dt)/(dx/dt)"
+          ],
+          "examples": [
+            "x=t, y=t^2 → parabola"
+          ],
+          "practice_questions": [
+            {
+              "question": "Find dy/dx if x=t, y=t^2",
+              "answer": "2t",
+              "explanation": "Divide derivatives"
+            }
+          ],
+          "common_mistakes": [
+            "Forgetting chain rule in parametrics"
+          ]
+        }
+      ],
+      "unit_review": {
+        "key_concepts": [
+          "Parametric = motion",
+          "Polar = angle-based system",
+          "Vectors = direction + magnitude"
+        ],
+        "practice_test": [],
+        "flashcards": []
+      }
+    }
+  ],
+
+  "formula_sheet": [
+    {
+      "category": "Derivatives",
+      "formulas": [
+        "d/dx x^n = nx^(n-1)",
+        "Product rule: f'g + fg'"
+      ]
+    },
+    {
+      "category": "Integrals",
+      "formulas": [
+        "∫ x^n dx = x^(n+1)/(n+1) + C"
+      ]
+    }
+  ],
+
+  "study_plan": {
+    "daily_schedule": [],
+    "weekly_goals": [],
+    "progress_tracking": {
+      "units_completed": [],
+      "practice_scores": []
+    }
+  },
+
+  "practice_resources": {
+    "past_exams": [],
+    "question_bank": [],
+    "flashcards": []
+  },
+
+  "mistake_log": [
+    {
+      "date": "",
+      "topic": "",
+      "mistake": "",
+      "correction": ""
+    }
+  ]
 }
