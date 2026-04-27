@@ -1,0 +1,284 @@
+{
+  "course": "AP Macroeconomics",
+  "exam_info": {
+    "exam_format": {
+      "multiple_choice": {
+        "question_count": 60,
+        "time_minutes": 70
+      },
+      "free_response": {
+        "question_count": 3,
+        "time_minutes": 60
+      }
+    },
+    "skills_tested": [
+      "Economic Growth",
+      "Unemployment",
+      "Inflation",
+      "Fiscal Policy",
+      "Monetary Policy",
+      "International Trade",
+      "Aggregate Demand and Supply",
+      "Macroeconomic Equilibrium"
+    ],
+    "scoring": {
+      "scale": "1-5",
+      "weights": {
+        "multiple_choice": 0.66,
+        "free_response": 0.33
+      }
+    }
+  },
+  "units": [
+    {
+      "unit_id": 1,
+      "title": "Basic Economic Concepts",
+      "key_concepts": [
+        "Scarcity",
+        "Opportunity Cost",
+        "Production Possibilities Curve",
+        "Economic Systems"
+      ],
+      "topics": [
+        {
+          "topic_id": "1.1",
+          "name": "Scarcity and Opportunity Cost",
+          "notes": [
+            "Scarcity: The fundamental problem of limited resources",
+            "Opportunity Cost: The value of the next best alternative forgone"
+          ],
+          "key_terms": [
+            "Scarcity",
+            "Opportunity Cost",
+            "Trade-Off"
+          ],
+          "examples": [
+            "Choosing between spending money on a concert ticket or saving it for future use"
+          ],
+          "practice_questions": [
+            {
+              "question": "Which of the following best describes the concept of opportunity cost?",
+              "choices": [
+                "The cost of all the alternatives you have to forgo when making a decision",
+                "The actual amount of money you spend on a good or service",
+                "The value of the best alternative that is forgone when a decision is made",
+                "The amount of money you save by choosing a particular alternative"
+              ],
+              "answer": 2,
+              "explanation": "Opportunity cost refers to the value of the best alternative that is forgone when a decision is made."
+            },
+            {
+              "question": "What does the Production Possibilities Curve (PPC) illustrate?",
+              "choices": [
+                "The maximum output combinations of two goods given limited resources",
+                "The relationship between inflation and unemployment",
+                "The cost of all available alternatives",
+                "The total production of an economy over time"
+              ],
+              "answer": 0,
+              "explanation": "The PPC illustrates the maximum output combinations of two goods that an economy can produce given limited resources."
+            },
+            {
+              "question": "In a market economy, which of the following is the primary factor that determines the allocation of resources?",
+              "choices": [
+                "Government regulation",
+                "Consumer preferences and market forces",
+                "Resource availability",
+                "Central planning by the government"
+              ],
+              "answer": 1,
+              "explanation": "In a market economy, resources are allocated based on consumer preferences and the interaction of market forces (supply and demand)."
+            }
+          ]
+        }
+      ],
+      "unit_review": {
+        "summary": "This unit introduces basic economic concepts like scarcity, opportunity cost, and economic systems. It lays the foundation for understanding how individuals and societies make choices about resource allocation.",
+        "key_points": [
+          "Scarcity is the fundamental problem in economics.",
+          "Opportunity cost is central to decision-making.",
+          "The PPC shows the trade-offs between different goods."
+        ],
+        "practice_test": []
+      }
+    },
+    {
+      "unit_id": 2,
+      "title": "Measurement of Economic Performance",
+      "key_concepts": [
+        "Gross Domestic Product (GDP)",
+        "Unemployment",
+        "Inflation",
+        "Business Cycles"
+      ],
+      "topics": [
+        {
+          "topic_id": "2.1",
+          "name": "Gross Domestic Product (GDP)",
+          "notes": [
+            "GDP: Total market value of all final goods and services produced within a country in a given period",
+            "Real vs. Nominal GDP",
+            "GDP Deflator"
+          ],
+          "key_terms": [
+            "GDP",
+            "Nominal GDP",
+            "Real GDP",
+            "GDP Deflator"
+          ],
+          "examples": [
+            "Real GDP adjusts for inflation, while Nominal GDP does not."
+          ],
+          "practice_questions": [
+            {
+              "question": "Which of the following is NOT included in the calculation of GDP?",
+              "choices": [
+                "The purchase of a new car",
+                "The purchase of a used car",
+                "The value of a new home built in the current year",
+                "The purchase of a service such as haircuts"
+              ],
+              "answer": 1,
+              "explanation": "Used goods, such as a used car, are not included in the calculation of GDP because they were already counted in a previous year."
+            },
+            {
+              "question": "Which measure of GDP accounts for inflation?",
+              "choices": [
+                "Nominal GDP",
+                "Real GDP",
+                "GDP Deflator",
+                "Unemployment Rate"
+              ],
+              "answer": 1,
+              "explanation": "Real GDP accounts for inflation and provides a more accurate reflection of an economy's output over time."
+            },
+            {
+              "question": "What does the GDP Deflator measure?",
+              "choices": [
+                "The percentage change in the GDP from year to year",
+                "The difference between nominal and real GDP",
+                "The inflation rate in a given year",
+                "The amount of government spending in the economy"
+              ],
+              "answer": 1,
+              "explanation": "The GDP Deflator measures the difference between nominal GDP (unadjusted for inflation) and real GDP (adjusted for inflation)."
+            }
+          ]
+        }
+      ],
+      "unit_review": {
+        "summary": "This unit covers how we measure a country's economic performance using indicators like GDP, inflation, and unemployment. It also introduces the concepts of business cycles and economic growth.",
+        "key_points": [
+          "GDP measures the total market value of all final goods and services.",
+          "Real GDP is adjusted for inflation, while Nominal GDP is not.",
+          "The GDP Deflator is used to account for inflation in GDP."
+        ]
+      }
+    },
+    {
+      "unit_id": 3,
+      "title": "National Income and Price Determination",
+      "key_concepts": [
+        "Aggregate Demand",
+        "Aggregate Supply",
+        "Macroeconomic Equilibrium",
+        "Price Levels"
+      ],
+      "topics": [
+        {
+          "topic_id": "3.1",
+          "name": "Aggregate Demand and Supply",
+          "notes": [
+            "Aggregate Demand (AD): Total demand for goods and services in an economy at different price levels",
+            "Aggregate Supply (AS): Total supply of goods and services in an economy at different price levels"
+          ],
+          "key_terms": [
+            "Aggregate Demand",
+            "Aggregate Supply",
+            "Macroeconomic Equilibrium"
+          ],
+          "examples": [
+            "A shift in the AD curve could result from changes in consumer spending or government policy."
+          ],
+          "practice_questions": [
+            {
+              "question": "Which of the following will cause a shift to the right in the Aggregate Demand curve?",
+              "choices": [
+                "An increase in the interest rate",
+                "A decrease in government spending",
+                "An increase in consumer confidence and spending",
+                "A decrease in exports"
+              ],
+              "answer": 2,
+              "explanation": "An increase in consumer confidence leads to more consumer spending, shifting the Aggregate Demand curve to the right."
+            },
+            {
+              "question": "What is the most likely effect of an increase in the cost of production on the Aggregate Supply curve?",
+              "choices": [
+                "It shifts the Aggregate Supply curve to the right",
+                "It shifts the Aggregate Supply curve to the left",
+                "It does not affect the Aggregate Supply curve",
+                "It shifts the Aggregate Demand curve to the right"
+              ],
+              "answer": 1,
+              "explanation": "An increase in the cost of production, such as higher wages or raw material costs, typically shifts the Aggregate Supply curve to the left."
+            },
+            {
+              "question": "At macroeconomic equilibrium, what must be true?",
+              "choices": [
+                "Aggregate Supply equals Aggregate Demand",
+                "Nominal GDP equals Real GDP",
+                "The unemployment rate is zero",
+                "The inflation rate is zero"
+              ],
+              "answer": 0,
+              "explanation": "At macroeconomic equilibrium, the total demand for goods and services (Aggregate Demand) equals the total supply of goods and services (Aggregate Supply)."
+            }
+          ]
+        }
+      ],
+      "unit_review": {
+        "summary": "This unit focuses on the determinants of Aggregate Demand and Aggregate Supply, and how they determine the overall price level and output in the economy. It also explains macroeconomic equilibrium.",
+        "key_points": [
+          "Aggregate Demand represents total spending in the economy.",
+          "Aggregate Supply represents total production in the economy.",
+          "Macroeconomic equilibrium occurs when Aggregate Demand equals Aggregate Supply."
+        ]
+      }
+    },
+    {
+      "unit_id": 4,
+      "title": "Inflation, Unemployment, and Stabilization Policies",
+      "key_concepts": [
+        "Inflation",
+        "Unemployment",
+        "Fiscal Policy",
+        "Monetary Policy"
+      ],
+      "topics": [],
+      "unit_review": {}
+    }
+  ],
+  "practice_resources": {
+    "past_exams": [],
+    "question_bank": [],
+    "flashcards": []
+  },
+  "study_plan": {
+    "weekly_schedule": [],
+    "unit_goals": [],
+    "progress_tracking": {
+      "units_completed": [],
+      "practice_scores": []
+    }
+  },
+  "mistake_log": [
+    {
+      "date": "",
+      "unit": "",
+      "topic": "",
+      "error": "",
+      "correction": ""
+    }
+  ]
+}

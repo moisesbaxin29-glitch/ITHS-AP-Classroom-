@@ -1,0 +1,373 @@
+{
+  "course": "AP World History: Modern",
+  "exam_info": {
+    "exam_format": {
+      "multiple_choice": {
+        "question_count": 55,
+        "time_minutes": 55
+      },
+      "short_answer": {
+        "question_count": 3,
+        "time_minutes": 40
+      },
+      "dbq": {
+        "question_count": 1,
+        "time_minutes": 60
+      },
+      "long_essay": {
+        "question_count": 1,
+        "time_minutes": 40
+      }
+    },
+    "skills_tested": [
+      "Developments and Processes",
+      "Sourcing and Situation",
+      "Claims and Evidence in Sources",
+      "Contextualization",
+      "Making Connections",
+      "Argumentation"
+    ],
+    "themes": [
+      "Humans and the Environment",
+      "Cultural Developments and Interactions",
+      "Governance",
+      "Economic Systems",
+      "Social Interactions and Organization",
+      "Technology and Innovation"
+    ],
+    "scoring": {
+      "scale": "1-5",
+      "weights": {
+        "multiple_choice": 0.40,
+        "short_answer": 0.20,
+        "dbq": 0.25,
+        "long_essay": 0.15
+      }
+    }
+  },
+  "units": [
+    {
+      "unit_id": 1,
+      "title": "The Global Tapestry",
+      "time_period": "c. 1200–1450",
+      "key_concepts": [
+        "Dar al-Islam expansion",
+        "Chinese dynasties (Song)",
+        "State building in Africa",
+        "Americas civilizations"
+      ],
+      "regions": [
+        "East Asia",
+        "Dar al-Islam",
+        "South and Southeast Asia",
+        "Africa",
+        "Europe",
+        "Americas"
+      ],
+      "topics": [
+        {
+          "topic_id": "1.1",
+          "name": "Developments in East Asia",
+          "notes": [
+            "Neo-Confucianism",
+            "Meritocracy",
+            "Song Dynasty innovations"
+          ],
+          "key_terms": [
+            "Neo-Confucianism",
+            "Meritocracy",
+            "Song Dynasty"
+          ],
+          "examples": [
+            "Song Dynasty civil service exams"
+          ],
+          "causes_effects": [
+            "The spread of Neo-Confucianism led to a more structured social hierarchy."
+          ],
+          "compare_contrast": [
+            "Compare the meritocratic systems in China (Song Dynasty) with the feudal systems in Europe."
+          ],
+          "practice_questions": [
+            {
+              "question": "Which of the following was a key aspect of Neo-Confucianism in the Song Dynasty?",
+              "choices": [
+                "Emphasis on spiritual meditation",
+                "Meritocratic government administration",
+                "Focus on agricultural productivity",
+                "Promotion of technological innovation"
+              ],
+              "answer": 1,
+              "explanation": "Neo-Confucianism integrated Confucian principles with a focus on philosophy and government, emphasizing merit-based administration."
+            },
+            {
+              "question": "How did the Song Dynasty's meritocracy system impact governance?",
+              "choices": [
+                "It led to a class-based system where only the elite could hold power.",
+                "It allowed for a more equitable distribution of power based on talent rather than birthright.",
+                "It led to the collapse of centralized control.",
+                "It promoted religious freedom across the empire."
+              ],
+              "answer": 1,
+              "explanation": "The meritocratic system allowed for people to earn government positions based on their skills and knowledge, rather than family status."
+            },
+            {
+              "question": "What innovation during the Song Dynasty contributed to economic growth?",
+              "choices": [
+                "The development of gunpowder",
+                "The invention of the printing press",
+                "The establishment of a nationwide tax system",
+                "The creation of paper money"
+              ],
+              "answer": 3,
+              "explanation": "The Song Dynasty introduced paper money, which facilitated trade and improved economic efficiency."
+            }
+          ]
+        }
+      ],
+      "timeline": [],
+      "important_people": [],
+      "important_events": [],
+      "primary_sources": [],
+      "unit_review": {
+        "summary": "The Global Tapestry period focuses on the emergence of empires and innovations across various regions. Key developments include the expansion of Islam, the rise of the Song Dynasty, and the flourishing of African empires.",
+        "key_points": [
+          "Song Dynasty's achievements in governance and technology.",
+          "Expansion of Dar al-Islam and its influence on trade.",
+          "Key African empires like Mali and their development."
+        ],
+        "practice_test": []
+      }
+    },
+    {
+      "unit_id": 2,
+      "title": "Networks of Exchange",
+      "time_period": "c. 1200–1450",
+      "key_concepts": [
+        "Silk Roads",
+        "Indian Ocean trade",
+        "Trans-Saharan trade",
+        "Cultural diffusion"
+      ],
+      "regions": [
+        "East Asia",
+        "South Asia",
+        "Africa",
+        "Europe"
+      ],
+      "topics": [
+        {
+          "topic_id": "2.1",
+          "name": "Silk Roads and Indian Ocean Trade",
+          "notes": [
+            "Cultural and economic exchanges",
+            "Role of merchants",
+            "Spread of religions and technologies"
+          ],
+          "key_terms": [
+            "Silk Roads",
+            "Indian Ocean Trade",
+            "Cultural Diffusion"
+          ],
+          "examples": [
+            "The spread of Islam via trade networks"
+          ],
+          "practice_questions": [
+            {
+              "question": "What was the primary economic impact of the Silk Roads during this period?",
+              "choices": [
+                "Facilitated the growth of empires in China and India",
+                "Promoted the exchange of luxury goods like silk, spices, and gold",
+                "Encouraged widespread agricultural development",
+                "Led to the downfall of major regional economies"
+              ],
+              "answer": 1,
+              "explanation": "The Silk Roads facilitated trade of luxury goods such as silk and spices, which created economic growth in the regions involved."
+            },
+            {
+              "question": "How did the Indian Ocean trade network impact cultural diffusion?",
+              "choices": [
+                "It promoted the spread of Christianity across the region.",
+                "It allowed the transfer of technologies like navigation and shipbuilding.",
+                "It isolated different regions and prevented cultural exchanges.",
+                "It led to the decline of Islamic influence in South Asia."
+              ],
+              "answer": 1,
+              "explanation": "The Indian Ocean trade network allowed for the spread of technology and ideas, including advances in navigation and shipbuilding."
+            },
+            {
+              "question": "Which of the following was a key feature of trans-Saharan trade?",
+              "choices": [
+                "Trade of gold, salt, and slaves between Africa and Europe",
+                "The establishment of colonial settlements by European powers",
+                "The spread of Buddhism to Africa",
+                "The development of vast merchant fleets"
+              ],
+              "answer": 0,
+              "explanation": "Trans-Saharan trade was characterized by the exchange of valuable commodities like gold, salt, and slaves between Africa and Europe."
+            }
+          ]
+        }
+      ],
+      "unit_review": {
+        "summary": "The period saw extensive trade networks like the Silk Roads, Indian Ocean trade, and Trans-Saharan trade, which facilitated cultural and economic exchanges across continents.",
+        "key_points": [
+          "The spread of religions such as Islam and Buddhism.",
+          "Technological innovations like the compass and paper.",
+          "The impact of merchant networks on global trade."
+        ]
+      }
+    },
+    {
+      "unit_id": 3,
+      "title": "Land-Based Empires",
+      "time_period": "c. 1450–1750",
+      "key_concepts": [
+        "Ottoman Empire",
+        "Mughal Empire",
+        "Qing Dynasty",
+        "Gunpowder empires"
+      ],
+      "regions": [
+        "Middle East",
+        "South Asia",
+        "East Asia",
+        "Europe"
+      ],
+      "topics": [
+        {
+          "topic_id": "3.1",
+          "name": "The Rise of the Ottoman Empire",
+          "notes": [
+            "The development of the Janissary corps",
+            "Expansion and conquests in Eastern Europe and North Africa"
+          ],
+          "key_terms": [
+            "Ottoman Empire",
+            "Janissaries",
+            "Gunpowder Empires"
+          ],
+          "examples": [
+            "The conquest of Constantinople"
+          ],
+          "practice_questions": [
+            {
+              "question": "Which military unit was crucial to the success of the Ottoman Empire?",
+              "choices": [
+                "Mamluks",
+                "Janissaries",
+                "Samurai",
+                "Hussars"
+              ],
+              "answer": 1,
+              "explanation": "The Janissaries were an elite military unit in the Ottoman Empire, integral to its success and expansion."
+            },
+            {
+              "question": "Which of the following was a key factor in the Ottoman Empire's military success?",
+              "choices": [
+                "Advanced naval technologies",
+                "The use of gunpowder and cannons",
+                "Trade monopolies with Europe",
+                "Religious tolerance"
+              ],
+              "answer": 1,
+              "explanation": "The Ottomans used gunpowder and cannons, such as during the siege of Constantinople, to achieve military success."
+            },
+            {
+              "question": "Which battle led to the fall of the Byzantine Empire and the rise of the Ottoman Empire?",
+              "choices": [
+                "Battle of Lepanto",
+                "Battle of Mohács",
+                "Fall of Constantinople",
+                "Battle of Bosworth Field"
+              ],
+              "answer": 2,
+              "explanation": "The Fall of Constantinople in 1453 marked the end of the Byzantine Empire and the rise of the Ottoman Empire."
+            }
+          ]
+        }
+      ],
+      "unit_review": {}
+    },
+    {
+      "unit_id": 4,
+      "title": "Transoceanic Interconnections",
+      "time_period": "c. 1450–1750",
+      "key_concepts": [
+        "Columbian Exchange",
+        "Maritime exploration",
+        "Atlantic slave trade"
+      ],
+      "regions": [
+        "Americas",
+        "Europe",
+        "Africa"
+      ],
+      "topics": [],
+      "unit_review": {}
+    },
+    {
+      "unit_id": 5,
+      "title": "Revolutions",
+      "time_period": "c. 1750–1900",
+      "key_concepts": [
+        "Enlightenment",
+        "Industrial Revolution",
+        "Political revolutions"
+      ],
+      "unit_review": {}
+    }
+  ],
+  "historical_thinking_skills": {
+    "contextualization": "Understanding the background of events and processes.",
+    "comparison": "Analyzing similarities and differences across time and space.",
+    "causation": "Identifying the causes and effects of historical events.",
+    "continuity_and_change": "Identifying historical patterns over time."
+  },
+  "writing_prep": {
+    "dbq": {
+      "structure": [
+        "Thesis",
+        "Contextualization",
+        "Use of documents",
+        "Outside evidence",
+        "Analysis"
+      ],
+      "practice_prompts": []
+    },
+    "leq": {
+      "structure": [
+        "Thesis",
+        "Context",
+        "Evidence",
+        "Analysis"
+      ],
+      "practice_prompts": []
+    },
+    "saq": {
+      "strategies": [],
+      "practice_questions": []
+    }
+  },
+  "practice_resources": {
+    "past_exams": [],
+    "question_bank": [],
+    "flashcards": []
+  },
+  "study_plan": {
+    "weekly_schedule": [],
+    "unit_goals": [],
+    "progress_tracking": {
+      "units_completed": [],
+      "practice_scores": []
+    }
+  },
+  "mistake_log": [
+    {
+      "date": "",
+      "unit": "",
+      "topic": "",
+      "error": "",
+      "correction": ""
+    }
+  ]
+}

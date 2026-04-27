@@ -1,0 +1,441 @@
+{
+  "course": "AP Precalculus",
+  "exam_info": {
+    "exam_format": {
+      "multiple_choice": {
+        "sections": 2,
+        "calculator": "Some sections allow graphing calculator",
+        "question_count": 43
+      },
+      "free_response": {
+        "question_count": 4,
+        "calculator": "Mixed"
+      },
+      "duration_minutes": 180
+    },
+    "skills_tested": [
+      "Function modeling",
+      "Symbolic manipulation",
+      "Graph interpretation",
+      "Mathematical reasoning",
+      "Real-world application"
+    ],
+    "scoring": {
+      "scale": "1-5",
+      "breakdown": {
+        "multiple_choice_weight": 0.66,
+        "free_response_weight": 0.34
+      }
+    }
+  },
+  "units": [
+    {
+      "unit_id": 1,
+      "title": "Polynomial and Rational Functions",
+      "topics": [
+        {
+          "topic_id": "1.1",
+          "name": "Polynomial Functions",
+          "notes": [
+            "Definition of polynomial functions.",
+            "End behavior depends on the leading term's degree and coefficient.",
+            "Zeros and multiplicity determine the graph's crossing behavior."
+          ],
+          "formulas": [
+            "f(x) = a_n x^n + a_(n-1) x^(n-1) + ... + a_0",
+            "End behavior: If n is even, the graph's ends go in the same direction. If n is odd, the graph's ends go in opposite directions."
+          ],
+          "examples": [
+            "f(x) = 2x^3 - 3x^2 + 4x - 5: Here, end behavior is determined by the highest degree term (x^3)."
+          ],
+          "practice_questions": [
+            {
+              "question": "For the polynomial function f(x) = 3x^4 - x^3 + 2x - 5, what is the end behavior of the graph?",
+              "choices": [
+                "Both ends go to positive infinity.",
+                "Both ends go to negative infinity.",
+                "One end goes to positive infinity, the other goes to negative infinity.",
+                "One end goes to positive infinity, the other to negative infinity."
+              ],
+              "answer": 0,
+              "explanation": "The highest degree term is x^4, which is even, so the graph will go in the same direction at both ends."
+            },
+            {
+              "question": "What does the multiplicity of a zero determine about the graph of a polynomial?",
+              "choices": [
+                "The number of times the graph crosses the x-axis.",
+                "The direction in which the graph crosses the x-axis.",
+                "Whether the graph will be concave up or down.",
+                "The maximum value of the polynomial."
+              ],
+              "answer": 0,
+              "explanation": "The multiplicity of a zero determines the number of times the graph crosses the x-axis. If multiplicity is even, the graph touches the x-axis and does not cross."
+            },
+            {
+              "question": "Which of the following is an example of a polynomial function?",
+              "choices": [
+                "f(x) = 2x^2 + 3x + 5",
+                "f(x) = 1/x^2",
+                "f(x) = √x",
+                "f(x) = log(x)"
+              ],
+              "answer": 0,
+              "explanation": "A polynomial function is a sum of terms where the variable has only non-negative integer exponents."
+            }
+          ],
+          "common_mistakes": [
+            "Forgetting the effect of multiplicity on the graph.",
+            "Ignoring the negative leading coefficients when analyzing the graph's direction."
+          ]
+        },
+        {
+          "topic_id": "1.2",
+          "name": "Rational Functions",
+          "notes": [
+            "Vertical asymptotes occur where the denominator equals zero.",
+            "Horizontal asymptotes are found by comparing the degrees of the numerator and denominator.",
+            "Oblique asymptotes occur if the degree of the numerator is one greater than the degree of the denominator."
+          ],
+          "formulas": [
+            "f(x) = p(x)/q(x)",
+            "Vertical asymptote: Set denominator q(x) = 0.",
+            "Horizontal asymptote: If degree of p(x) < degree of q(x), the horizontal asymptote is y = 0."
+          ],
+          "examples": [
+            "f(x) = (x^2 - 4)/(x - 2): Vertical asymptote at x = 2.",
+            "f(x) = (x^2 - 2x)/(x - 3): Horizontal asymptote at y = 0."
+          ],
+          "practice_questions": [
+            {
+              "question": "For the rational function f(x) = (x^2 - 9)/(x - 3), what is the vertical asymptote?",
+              "choices": [
+                "x = -3",
+                "x = 3",
+                "y = 3",
+                "y = -3"
+              ],
+              "answer": 1,
+              "explanation": "The vertical asymptote occurs where the denominator equals zero. x - 3 = 0, so x = 3."
+            },
+            {
+              "question": "For the rational function f(x) = (x + 1)/(x^2 - 4), what is the horizontal asymptote?",
+              "choices": [
+                "y = 0",
+                "y = 1",
+                "x = 0",
+                "x = -1"
+              ],
+              "answer": 0,
+              "explanation": "Since the degree of the numerator is less than the degree of the denominator, the horizontal asymptote is y = 0."
+            },
+            {
+              "question": "Which of the following is true for the rational function f(x) = (3x + 2)/(x^2 - 1)?",
+              "choices": [
+                "There is a vertical asymptote at x = 1.",
+                "The function has no vertical asymptote.",
+                "The horizontal asymptote is y = 3.",
+                "The function has a hole at x = -1."
+              ],
+              "answer": 0,
+              "explanation": "The function has vertical asymptotes where the denominator equals zero, i.e., at x = 1 and x = -1."
+            }
+          ],
+          "common_mistakes": []
+        }
+      ],
+      "unit_review": {
+        "key_concepts": [
+          "Identify polynomial functions by their degree and leading coefficient.",
+          "Interpret graphs of rational functions, including vertical, horizontal, and oblique asymptotes."
+        ],
+        "practice_test": [],
+        "flashcards": []
+      }
+    },
+    {
+      "unit_id": 2,
+      "title": "Exponential and Logarithmic Functions",
+      "topics": [
+        {
+          "topic_id": "2.1",
+          "name": "Exponential Functions",
+          "notes": [
+            "Exponential functions describe growth or decay.",
+            "Base e exponential function is the natural exponential function."
+          ],
+          "formulas": [
+            "f(x) = a * b^x",
+            "f(x) = a * e^(kx), where e ≈ 2.718",
+            "Growth: f(x) = a * e^(kx), where k > 0.",
+            "Decay: f(x) = a * e^(kx), where k < 0."
+          ],
+          "examples": [
+            "f(x) = 2 * 3^x: An exponential growth function.",
+            "f(x) = 5 * e^(0.2x): A growth function with base e."
+          ],
+          "practice_questions": [
+            {
+              "question": "Which of the following functions represents exponential growth?",
+              "choices": [
+                "f(x) = 2 * 5^x",
+                "f(x) = 3 * e^(-x)",
+                "f(x) = 4 * 2^(-x)",
+                "f(x) = -3 * e^(x)"
+              ],
+              "answer": 0,
+              "explanation": "Exponential growth occurs when the base b > 1. 5^x is an example of growth."
+            },
+            {
+              "question": "What is the value of f(x) = 2 * e^(3x) when x = 0?",
+              "choices": [
+                "1",
+                "2",
+                "e^3",
+                "0"
+              ],
+              "answer": 1,
+              "explanation": "When x = 0, f(0) = 2 * e^(3*0) = 2 * e^0 = 2 * 1 = 2."
+            },
+            {
+              "question": "Which of the following is true about the exponential decay function f(x) = 5 * e^(-2x)?",
+              "choices": [
+                "The function will approach 5 as x increases.",
+                "The function will never cross the x-axis.",
+                "The function grows as x increases.",
+                "The function has a maximum value."
+              ],
+              "answer": 1,
+              "explanation": "Since the decay factor is negative, the function approaches zero as x increases."
+            }
+          ],
+          "common_mistakes": []
+        },
+        {
+          "topic_id": "2.2",
+          "name": "Logarithmic Functions",
+          "notes": [
+            "Logarithmic functions are the inverse of exponential functions.",
+            "Logarithmic identities help simplify expressions."
+          ],
+          "formulas": [
+            "log_b(x) = y if and only if b^y = x",
+            "log_b(xy) = log_b(x) + log_b(y)",
+            "log_b(x^n) = n log_b(x)"
+          ],
+          "examples": [
+            "log_10(100) = 2 because 10^2 = 100.",
+            "log_b(x) + log_b(y) = log_b(xy)."
+          ],
+          "practice_questions": [
+            {
+              "question": "Which of the following is equivalent to log_2(8)?",
+              "choices": [
+                "3",
+                "2",
+                "log_2(2^3)",
+                "log_8(2)"
+              ],
+              "answer": 0,
+              "explanation": "log_2(8) = log_2(2^3) = 3."
+            },
+            {
+              "question": "Simplify the expression log_5(25) + log_5(5).",
+              "choices": [
+                "log_5(125)",
+                "log_5(30)",
+                "log_5(5^2)",
+                "log_5(5)"
+              ],
+              "answer": 0,
+              "explanation": "log_5(25) = 2, and log_5(5) = 1. So, 2 + 1 = log_5(125)."
+            },
+            {
+              "question": "Which of the following is the inverse of f(x) = e^x?",
+              "choices": [
+                "f^-1(x) = log_e(x)",
+                "f^-1(x) = log(x)",
+                "f^-1(x) = x^e",
+                "f^-1(x) = e^x"
+              ],
+              "answer": 0,
+              "explanation": "The inverse of the exponential function e^x is the natural logarithmic function log_e(x), or ln(x)."
+            }
+          ],
+          "common_mistakes": []
+        }
+      ],
+      "unit_review": {
+        "key_concepts": [
+          "Know the properties of exponential and logarithmic functions.",
+          "Understand the relationship between logarithms and exponents."
+        ],
+        "practice_test": [],
+        "flashcards": []
+      }
+    },
+    {
+      "unit_id": 3,
+      "title": "Trigonometric Functions",
+      "topics": [
+        {
+          "topic_id": "3.1",
+          "name": "Unit Circle",
+          "notes": [
+            "The unit circle helps define trigonometric functions.",
+            "The sine and cosine values are based on the coordinates of points on the unit circle."
+          ],
+          "formulas": [
+            "sin(θ) = y/r",
+            "cos(θ) = x/r",
+            "tan(θ) = y/x"
+          ],
+          "examples": [
+            "For θ = 45°, sin(45°) = cos(45°) = √2/2."
+          ],
+          "practice_questions": [
+            {
+              "question": "What is the value of sin(30°)?",
+              "choices": [
+                "1/2",
+                "√3/2",
+                "1",
+                "√2/2"
+              ],
+              "answer": 0,
+              "explanation": "sin(30°) = 1/2."
+            },
+            {
+              "question": "What is the value of cos(60°)?",
+              "choices": [
+                "√3/2",
+                "1/2",
+                "1",
+                "0"
+              ],
+              "answer": 1,
+              "explanation": "cos(60°) = 1/2."
+            },
+            {
+              "question": "What is tan(45°)?",
+              "choices": [
+                "1",
+                "0",
+                "√2",
+                "undefined"
+              ],
+              "answer": 0,
+              "explanation": "tan(45°) = 1."
+            }
+          ],
+          "common_mistakes": []
+        },
+        {
+          "topic_id": "3.2",
+          "name": "Graphs of Trig Functions",
+          "notes": [
+            "Amplitude: the vertical stretch or shrink of a trigonometric graph.",
+            "Period: the horizontal length of one complete cycle of the graph.",
+            "Phase shift: horizontal translation of the graph."
+          ],
+          "formulas": [
+            "y = A sin(Bx - C) + D",
+            "Amplitude = |A|",
+            "Period = 2π/|B|"
+          ],
+          "examples": [
+            "y = 2 sin(x) has amplitude 2 and period 2π."
+          ],
+          "practice_questions": [
+            {
+              "question": "What is the amplitude of y = 3 cos(x)?",
+              "choices": [
+                "3",
+                "1",
+                "π",
+                "0"
+              ],
+              "answer": 0,
+              "explanation": "The amplitude is the absolute value of the coefficient of the cosine function, which is 3."
+            },
+            {
+              "question": "What is the period of y = sin(2x)?",
+              "choices": [
+                "π",
+                "2π",
+                "π/2",
+                "1"
+              ],
+              "answer": 0,
+              "explanation": "Period is given by 2π/|B|. Here B = 2, so the period is 2π/2 = π."
+            },
+            {
+              "question": "Which of the following represents a phase shift of 3 units to the left?",
+              "choices": [
+                "y = sin(x + 3)",
+                "y = sin(x - 3)",
+                "y = sin(3x)",
+                "y = cos(x - 3)"
+              ],
+              "answer": 0,
+              "explanation": "Phase shift left is represented by a positive shift inside the function, i.e., sin(x + 3)."
+            }
+          ],
+          "common_mistakes": []
+        }
+      ],
+      "unit_review": {
+        "key_concepts": [
+          "Know the unit circle and basic trig ratios.",
+          "Understand how amplitude, period, and phase shift affect the graph of trigonometric functions."
+        ],
+        "practice_test": [],
+        "flashcards": []
+      }
+    }
+  ],
+  "formula_sheet": [
+    {
+      "category": "Algebra",
+      "formulas": [
+        "Quadratic Formula: x = (-b ± √(b^2 - 4ac))/2a",
+        "Factoring: ax^2 + bx + c = (x + p)(x + q)"
+      ]
+    },
+    {
+      "category": "Trigonometry",
+      "formulas": [
+        "sin^2(θ) + cos^2(θ) = 1",
+        "tan(θ) = sin(θ)/cos(θ)",
+        "Pythagorean Identities: 1 + tan^2(θ) = sec^2(θ), 1 + cot^2(θ) = csc^2(θ)"
+      ]
+    },
+    {
+      "category": "Exponential/Logarithmic",
+      "formulas": [
+        "log_b(x) = log(x)/log(b)",
+        "f(x) = a * e^(kx) (growth/decay)"
+      ]
+    }
+  ],
+  "study_plan": {
+    "daily_schedule": [],
+    "weekly_goals": [],
+    "progress_tracking": {
+      "units_completed": [],
+      "practice_scores": []
+    }
+  },
+  "practice_resources": {
+    "past_exams": [],
+    "question_bank": [],
+    "flashcards": []
+  },
+  "mistake_log": [
+    {
+      "date": "",
+      "topic": "",
+      "mistake": "",
+      "correction": ""
+    }
+  ]
+}

@@ -1,0 +1,378 @@
+{
+  "units": [
+    {
+      "unit_id": 1,
+      "title": "Short Fiction",
+      "overview": {
+        "description": "This unit focuses on the analysis of short fiction, including character development, narrative perspective, plot structure, setting, and themes. Students will explore how these elements interact to convey meaning in short stories. Literary devices, narrative techniques, and the role of the reader will also be key concepts in this unit.",
+        "key_works": [
+          "The Lottery by Shirley Jackson",
+          "A Good Man is Hard to Find by Flannery O'Connor",
+          "The Story of an Hour by Kate Chopin",
+          "Hills Like White Elephants by Ernest Hemingway"
+        ]
+      },
+      "topics": [
+        {
+          "topic": "Character Development",
+          "notes": [
+            {
+              "title": "Flat vs. Round Characters",
+              "content": "Flat characters are one-dimensional and do not undergo significant change, while round characters are complex, multifaceted, and often change over the course of the story."
+            },
+            {
+              "title": "Dynamic vs. Static Characters",
+              "content": "Dynamic characters experience growth or change during the story, whereas static characters remain largely unchanged."
+            },
+            {
+              "title": "Character Motivation",
+              "content": "The driving force behind a character's actions. Understanding the motivations of characters is key to interpreting their behavior and the overall themes of the story."
+            }
+          ],
+          "key_terms": [
+            {
+              "term": "Protagonist",
+              "definition": "The main character around whom the plot centers. Typically the character who undergoes the most significant change or development."
+            },
+            {
+              "term": "Antagonist",
+              "definition": "The character or force that opposes the protagonist, creating conflict in the story."
+            }
+          ],
+          "practice_questions": [
+            {
+              "question": "Which of the following best describes a round character?",
+              "choices": [
+                "A character who remains unchanged throughout the story.",
+                "A character with complex emotions and motivations who changes over time.",
+                "A character who serves only as a background figure in the plot.",
+                "A character whose primary role is to oppose the protagonist."
+              ],
+              "answer": 1,
+              "explanation": "A round character is one who has complex emotions, motivations, and undergoes significant development."
+            },
+            {
+              "question": "In 'The Lottery' by Shirley Jackson, what is the motivation of the townspeople for conducting the lottery?",
+              "choices": [
+                "They believe it will bring prosperity to the village.",
+                "They do it to maintain social order and tradition.",
+                "They are forced to participate by the government.",
+                "They want to select a new leader."
+              ],
+              "answer": 1,
+              "explanation": "The townspeople participate in the lottery out of blind adherence to tradition, even though they do not fully understand its purpose or consequences."
+            }
+          ]
+        },
+        {
+          "topic": "Narrative Perspective",
+          "notes": [
+            {
+              "title": "First-Person Narration",
+              "content": "In first-person narration, the story is told from the perspective of the protagonist or another character using 'I'. This provides an intimate view of the narrator’s thoughts and emotions, but it can also limit the reader's understanding of other characters."
+            },
+            {
+              "title": "Third-Person Limited",
+              "content": "In third-person limited narration, the narrator knows the thoughts and feelings of only one character, often the protagonist. This allows for a deep understanding of one character while maintaining some distance from others."
+            },
+            {
+              "title": "Third-Person Omniscient",
+              "content": "In third-person omniscient narration, the narrator knows the thoughts and feelings of all characters in the story. This allows for a broader, all-encompassing view of the plot and characters."
+            }
+          ],
+          "key_terms": [
+            {
+              "term": "Narrative Voice",
+              "definition": "The voice used to tell the story, which can significantly impact the reader's experience."
+            },
+            {
+              "term": "Unreliable Narrator",
+              "definition": "A narrator whose credibility is compromised, often due to bias, limited knowledge, or deception."
+            }
+          ],
+          "practice_questions": [
+            {
+              "question": "What is the effect of first-person narration in a story?",
+              "choices": [
+                "It allows the reader to know the thoughts and feelings of all characters.",
+                "It provides an objective view of the events.",
+                "It provides an intimate and personal perspective of the narrator’s experiences.",
+                "It limits the reader's understanding of the protagonist's emotions."
+              ],
+              "answer": 2,
+              "explanation": "First-person narration offers a personal perspective, allowing the reader to deeply connect with the narrator’s thoughts and emotions."
+            },
+            {
+              "question": "Which type of narration is used in 'A Good Man is Hard to Find' by Flannery O'Connor?",
+              "choices": [
+                "First-Person",
+                "Third-Person Limited",
+                "Third-Person Omniscient",
+                "Second-Person"
+              ],
+              "answer": 1,
+              "explanation": "The story is told from a third-person limited perspective, focusing on the grandmother's thoughts and perceptions while providing insight into other characters."
+            }
+          ]
+        },
+        {
+          "topic": "Plot Structure",
+          "notes": [
+            {
+              "title": "Exposition",
+              "content": "The exposition introduces the characters, setting, and conflict, setting up the foundation for the rest of the story."
+            },
+            {
+              "title": "Rising Action",
+              "content": "The rising action builds the tension and develops the conflict. It often involves the protagonist facing obstacles or challenges."
+            },
+            {
+              "title": "Climax",
+              "content": "The climax is the turning point of the story, where the conflict reaches its peak, and a resolution becomes imminent."
+            },
+            {
+              "title": "Falling Action",
+              "content": "The falling action shows the aftermath of the climax and leads to the resolution."
+            },
+            {
+              "title": "Resolution",
+              "content": "The resolution wraps up the plot, resolving any remaining conflicts and showing the final outcomes of the story."
+            }
+          ],
+          "key_terms": [
+            {
+              "term": "Conflict",
+              "definition": "The central struggle between opposing forces in the story, which drives the plot."
+            },
+            {
+              "term": "Denouement",
+              "definition": "The final part of the story where any remaining issues are resolved and the plot reaches a conclusion."
+            }
+          ],
+          "practice_questions": [
+            {
+              "question": "Which part of a short story is typically the point of highest tension?",
+              "choices": [
+                "Exposition",
+                "Rising Action",
+                "Climax",
+                "Resolution"
+              ],
+              "answer": 2,
+              "explanation": "The climax is the point of highest tension in the plot, where the main conflict reaches its peak."
+            },
+            {
+              "question": "What is the main purpose of the falling action in a short story?",
+              "choices": [
+                "To introduce the main conflict",
+                "To resolve the central conflict",
+                "To build tension",
+                "To show the outcome after the climax"
+              ],
+              "answer": 3,
+              "explanation": "The falling action depicts the consequences or results following the climax and leads to the story’s resolution."
+            }
+          ]
+        }
+      ],
+      "literary_devices": [
+        {
+          "name": "Symbolism",
+          "definition": "A literary device in which a symbol represents an idea, concept, or larger theme in the text."
+        },
+        {
+          "name": "Irony",
+          "definition": "A contrast between expectation and reality, often highlighting a discrepancy between what appears to be true and what actually is."
+        },
+        {
+          "name": "Foreshadowing",
+          "definition": "Hints or clues provided early in the story that suggest events that will happen later."
+        }
+      ],
+      "essay_guides": {
+        "poetry_analysis": {
+          "structure": [
+            "Introduction: Include title, author, and thesis",
+            "Body: Analyze the poem’s form, structure, and literary devices",
+            "Conclusion: Summarize key findings and discuss the overall impact of the poem"
+          ],
+          "tips": [
+            "Focus on the poet’s use of symbolism, tone, and meter.",
+            "Examine the title for clues about the poem’s meaning.",
+            "Use quotes to support your analysis of key literary devices."
+          ]
+        },
+        "prose_analysis": {
+          "structure": [
+            "Introduction: Thesis statement, title, and author",
+            "Body: Analyze character development, plot structure, and narrative techniques",
+            "Conclusion: Discuss the significance of your analysis and how it supports your thesis"
+          ],
+          "tips": [
+            "Track character development and how it informs the theme.",
+            "Examine the author’s use of narrative techniques like point of view.",
+            "Stay focused on analyzing the author's intent and not just summarizing the plot."
+          ]
+        },
+        "literary_argument": {
+          "structure": [
+            "Introduction: Present your thesis and argument",
+            "Body: Use textual evidence to support your argument",
+            "Conclusion: Restate your argument and explain its significance"
+          ],
+          "tips": [
+            "Clearly define your argument and support it with specific examples from the text.",
+            "Stay focused on literary aspects like themes and character development.",
+            "Be concise and logical in presenting your analysis."
+          ]
+        }
+      }
+    },
+    {
+      "unit_id": 2,
+      "title": "Poetry",
+      "overview": {
+        "description": "This unit focuses on analyzing poetry, with a deep dive into literary devices, themes, structure, meter, and rhythm. Students will learn how poets use these elements to convey meaning, evoke emotion, and express complex ideas. Key poetic forms like sonnets, free verse, and villanelles will also be explored.",
+        "key_works": [
+          "Ode to a Nightingale by John Keats",
+          "The Road Not Taken by Robert Frost",
+          "I Wandered Lonely as a Cloud by William Wordsworth",
+          "Do Not Go Gentle into That Good Night by Dylan Thomas",
+          "The Love Song of J. Alfred Prufrock by T.S. Eliot"
+        ]
+      },
+      "topics": [
+        {
+          "topic": "Figurative Language",
+          "notes": [
+            {
+              "title": "Metaphor and Simile",
+              "content": "A metaphor compares two unlike things without using 'like' or 'as,' while a simile explicitly uses 'like' or 'as.' Both are used to deepen meaning and create vivid imagery in poetry."
+            },
+            {
+              "title": "Personification",
+              "content": "Personification involves giving human qualities to non-human things, allowing poets to create connections between the human experience and the world around them."
+            },
+            {
+              "title": "Hyperbole",
+              "content": "Hyperbole is exaggerated language used for emphasis or effect. It can highlight a theme, feeling, or situation in an exaggerated or dramatic way."
+            }
+          ],
+          "key_terms": [
+            {
+              "term": "Symbolism",
+              "definition": "The use of symbols to represent ideas or concepts. In poetry, an object, action, or event may stand for something larger than itself."
+            },
+            {
+              "term": "Irony",
+              "definition": "The expression of meaning through language that signifies the opposite, often used to highlight contradictions or unexpected outcomes."
+            }
+          ],
+          "practice_questions": [
+            {
+              "question": "What is the primary effect of using personification in poetry?",
+              "choices": [
+                "It simplifies complex themes.",
+                "It creates vivid imagery and emotional connections.",
+                "It limits the depth of the poem.",
+                "It provides factual information."
+              ],
+              "answer": 1,
+              "explanation": "Personification creates vivid and emotional imagery by giving human characteristics to non-human elements, allowing readers to connect more deeply with the poem."
+            },
+            {
+              "question": "Which of the following is an example of a metaphor?",
+              "choices": [
+                "'The world is a stage.'",
+                "'She was as tall as a tree.'",
+                "'His voice was like music.'",
+                "'The wind whispered through the trees.'"
+              ],
+              "answer": 0,
+              "explanation": "The phrase 'The world is a stage' is a metaphor, comparing the world to a stage without using 'like' or 'as.'"
+            }
+          ]
+        },
+        {
+          "topic": "Meter and Rhyme",
+          "notes": [
+            {
+              "title": "Iambic Pentameter",
+              "content": "Iambic pentameter is a metrical pattern consisting of five pairs of alternating unstressed and stressed syllables. It is commonly used in Shakespearean sonnets and many forms of English poetry."
+            },
+            {
+              "title": "Rhyme Scheme",
+              "content": "The rhyme scheme is the pattern of end rhymes in a poem, typically represented by letters (e.g., ABAB). Poets use rhyme schemes to enhance the musicality of the poem or reinforce thematic elements."
+            },
+            {
+              "title": "Free Verse",
+              "content": "Free verse poetry does not have a consistent meter or rhyme scheme. It allows the poet more flexibility and freedom to express ideas in a less structured way."
+            }
+          ],
+          "key_terms": [
+            {
+              "term": "Enjambment",
+              "definition": "The continuation of a sentence or phrase beyond the end of a line or stanza without a pause. This device creates a flow that can lead to tension or surprise."
+            },
+            {
+              "term": "Caesura",
+              "definition": "A pause or break within a line of poetry, often used to create rhythm or to emphasize a particular idea or image."
+            }
+          ],
+          "practice_questions": [
+            {
+              "question": "What is the primary effect of using iambic pentameter in poetry?",
+              "choices": [
+                "It simplifies the meaning of the poem.",
+                "It creates a natural, rhythmic flow that reflects the English language.",
+                "It makes the poem less engaging.",
+                "It eliminates any rhyme scheme."
+              ],
+              "answer": 1,
+              "explanation": "Iambic pentameter mimics the natural rhythm of speech, which helps the poem flow smoothly while maintaining a formal structure."
+            },
+            {
+              "question": "In which poem would you most likely find free verse?",
+              "choices": [
+                "A Shakespearean sonnet",
+                "The Road Not Taken by Robert Frost",
+                "I Wandered Lonely as a Cloud by William Wordsworth",
+                "The Love Song of J. Alfred Prufrock by T.S. Eliot"
+              ],
+              "answer": 3,
+              "explanation": "'The Love Song of J. Alfred Prufrock' by T.S. Eliot is written in free verse, meaning it lacks a consistent meter or rhyme scheme."
+            }
+          ]
+        }
+      ],
+      "literary_devices": [
+        {
+          "name": "Allegory",
+          "definition": "A narrative in which characters and events symbolize a deeper moral or political meaning."
+        },
+        {
+          "name": "Allusion",
+          "definition": "A reference to another text, event, or cultural reference that adds deeper layers of meaning."
+        },
+        {
+          "name": "Onomatopoeia",
+          "definition": "Words that imitate the sounds they describe, such as 'buzz,' 'clang,' or 'whisper.'"
+        }
+      ],
+      "essay_guides": {
+        "poetry_analysis": {
+          "structure": [
+            "Introduction: Present the poem’s title, author, and central thesis",
+            "Body: Analyze key literary devices (metaphor, imagery, symbolism, etc.) and their effects on the poem’s meaning",
+            "Conclusion: Summarize your findings and explore the lasting impact of the poem’s themes"
+          ],
+          "tips": [
+            "Focus on the tone, mood, and structure of the poem.",
+            "Use specific quotes to demonstrate the poet’s use of literary devices.",
+            "Look for patterns in imagery and word choice to uncover deeper meanings."
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,444 @@
+{
+  "course": "AP English Language and Composition",
+  "exam_info": {
+    "exam_format": {
+      "multiple_choice": {
+        "question_count": 45,
+        "time_minutes": 60,
+        "passage_types": [
+          "Nonfiction prose",
+          "Rhetorical passages",
+          "Argumentative texts"
+        ]
+      },
+      "free_response": {
+        "question_count": 3,
+        "time_minutes": 120,
+        "types": [
+          "Rhetorical Analysis Essay",
+          "Argument Essay",
+          "Synthesis Essay"
+        ]
+      }
+    },
+    "skills_tested": [
+      "Rhetorical analysis",
+      "Argumentation",
+      "Synthesis of sources",
+      "Reading comprehension",
+      "Evidence-based writing"
+    ],
+    "scoring": {
+      "scale": "1-5",
+      "weights": {
+        "multiple_choice": 0.45,
+        "free_response": 0.55
+      }
+    }
+  },
+  "units": [
+    {
+      "unit_id": 1,
+      "title": "Rhetorical Situation",
+      "topics": [
+        {
+          "topic_id": "1.1",
+          "name": "Understanding the Rhetorical Situation",
+          "notes": [
+            "Speaker, audience, purpose, context, exigence",
+            "How context influences meaning",
+            "How to identify rhetorical appeals and purpose in texts"
+          ],
+          "key_terms": [
+            "Exigence",
+            "Audience",
+            "Purpose",
+            "Context",
+            "Rhetorical Appeals"
+          ],
+          "examples": [
+            "In Martin Luther King Jr.'s 'I Have a Dream' speech, the exigence was the civil rights movement, and the audience was the American public."
+          ],
+          "practice_questions": [
+            {
+              "question": "Which of the following best defines the exigence in a rhetorical situation?",
+              "choices": [
+                "The emotional appeal of the text.",
+                "The reason the author writes the text.",
+                "The target audience for the text.",
+                "The historical context surrounding the text."
+              ],
+              "answer": 1,
+              "explanation": "Exigence refers to the specific issue or event that prompts the need for the text."
+            },
+            {
+              "question": "How does context influence the meaning of a rhetorical text?",
+              "choices": [
+                "It helps determine the tone and style of the writing.",
+                "It identifies the structure of the argument.",
+                "It defines the author's personal bias.",
+                "It influences the effectiveness of rhetorical appeals."
+              ],
+              "answer": 3,
+              "explanation": "Context shapes how an audience interprets the text and its rhetorical strategies."
+            },
+            {
+              "question": "What is the purpose of understanding the rhetorical situation when analyzing a text?",
+              "choices": [
+                "To understand why the author made specific rhetorical choices.",
+                "To identify the author's credibility.",
+                "To evaluate the quality of the writing.",
+                "To argue for or against the author's point of view."
+              ],
+              "answer": 0,
+              "explanation": "Understanding the rhetorical situation allows for a deeper analysis of the author's rhetorical choices and intentions."
+            }
+          ]
+        }
+      ],
+      "unit_review": {
+        "summary": "This unit focuses on understanding the components of the rhetorical situation and how they influence communication.",
+        "key_points": [
+          "Understanding the speaker's purpose, audience, and context is crucial for rhetorical analysis.",
+          "Identifying rhetorical appeals (ethos, pathos, logos) enhances your ability to analyze texts effectively."
+        ],
+        "practice_questions": []
+      }
+    },
+    {
+      "unit_id": 2,
+      "title": "Claims and Evidence",
+      "topics": [
+        {
+          "topic_id": "2.1",
+          "name": "Types of Claims",
+          "notes": [
+            "Defensible claims are clear, specific, and supported by evidence.",
+            "Claims of fact, value, and policy differ in their purpose and supporting evidence.",
+            "Understanding the difference between claims and supporting evidence is key to building a strong argument."
+          ],
+          "key_terms": [
+            "Claim",
+            "Thesis",
+            "Evidence",
+            "Fact",
+            "Policy",
+            "Value"
+          ],
+          "examples": [
+            "Claim of fact: 'The Earth is round.'",
+            "Claim of value: 'Eating healthy food is important.'",
+            "Claim of policy: 'The government should reduce carbon emissions.'"
+          ],
+          "practice_questions": [
+            {
+              "question": "Which of the following is an example of a claim of value?",
+              "choices": [
+                "The government should regulate greenhouse gas emissions.",
+                "Eating vegetables is healthier than eating junk food.",
+                "The Earth is approximately 93 million miles from the Sun.",
+                "The policy should be reformed to reduce traffic accidents."
+              ],
+              "answer": 1,
+              "explanation": "A claim of value argues the worth or importance of something, as seen in the statement about eating healthy."
+            },
+            {
+              "question": "What is the primary purpose of evidence in supporting a claim?",
+              "choices": [
+                "To create emotional appeal.",
+                "To establish the credibility of the writer.",
+                "To persuade the audience by proving the claim is valid.",
+                "To entertain the reader with interesting facts."
+              ],
+              "answer": 2,
+              "explanation": "Evidence supports a claim by proving it to be true or valid, thus strengthening the argument."
+            },
+            {
+              "question": "Which of the following is a valid claim of fact?",
+              "choices": [
+                "All people should adopt a plant-based diet.",
+                "Technology has improved the quality of education.",
+                "Democracy is the best form of government.",
+                "The Earth is flat."
+              ],
+              "answer": 1,
+              "explanation": "A claim of fact asserts something that can be verified as true or false, like the statement about technology."
+            }
+          ]
+        }
+      ],
+      "unit_review": {
+        "summary": "This unit covers how to identify and construct various types of claims, including claims of fact, value, and policy, and how to support them with evidence.",
+        "key_points": [
+          "Recognizing different types of claims is essential for building effective arguments.",
+          "Evidence can include statistics, expert testimony, personal experience, and logical reasoning."
+        ],
+        "practice_questions": []
+      }
+    },
+    {
+      "unit_id": 3,
+      "title": "Rhetorical Strategies",
+      "topics": [
+        {
+          "topic_id": "3.1",
+          "name": "Appeals",
+          "notes": [
+            "Ethos (credibility), Pathos (emotion), and Logos (logic) are the three main rhetorical appeals.",
+            "Effective arguments rely on a balance of these appeals, depending on the audience and purpose."
+          ],
+          "key_terms": [
+            "Ethos",
+            "Pathos",
+            "Logos"
+          ],
+          "examples": [
+            "Ethos: A doctor recommending a health treatment.",
+            "Pathos: An emotional appeal to the audience's sense of compassion.",
+            "Logos: Using statistics to support an argument."
+          ],
+          "practice_questions": [
+            {
+              "question": "Which rhetorical appeal is used when an author refers to their professional expertise to build trust with the audience?",
+              "choices": [
+                "Ethos",
+                "Pathos",
+                "Logos",
+                "Kairos"
+              ],
+              "answer": 0,
+              "explanation": "Ethos refers to the credibility or trustworthiness of the speaker or writer."
+            },
+            {
+              "question": "Which rhetorical appeal involves using logical reasoning and evidence to support an argument?",
+              "choices": [
+                "Ethos",
+                "Pathos",
+                "Logos",
+                "Kairos"
+              ],
+              "answer": 2,
+              "explanation": "Logos involves the use of logical arguments, facts, and evidence to persuade the audience."
+            },
+            {
+              "question": "An emotional appeal that attempts to elicit feelings of pity or sympathy from the audience is an example of which rhetorical strategy?",
+              "choices": [
+                "Ethos",
+                "Pathos",
+                "Logos",
+                "Ethical Appeal"
+              ],
+              "answer": 1,
+              "explanation": "Pathos is an emotional appeal designed to create an emotional response in the audience."
+            }
+          ]
+        },
+        {
+          "topic_id": "3.2",
+          "name": "Rhetorical Devices",
+          "notes": [
+            "Rhetorical devices are techniques used by authors to convey meaning and persuade their audience.",
+            "Common rhetorical devices include repetition, contrast, and exaggeration."
+          ],
+          "key_terms": [
+            "Anaphora",
+            "Parallelism",
+            "Antithesis",
+            "Allusion",
+            "Metaphor"
+          ],
+          "examples": [
+            "Anaphora: 'I have a dream...' (repetition of the phrase 'I have a dream')",
+            "Parallelism: 'It was the best of times, it was the worst of times.'",
+            "Antithesis: 'Give me liberty, or give me death.'",
+            "Allusion: 'This place is like a Garden of Eden.'"
+          ],
+          "practice_questions": [
+            {
+              "question": "What is an example of anaphora?",
+              "choices": [
+                "'It was the best of times, it was the worst of times.'",
+                "'I have a dream... I have a dream...'",
+                "'Give me liberty, or give me death.'",
+                "'All men are created equal.'"
+              ],
+              "answer": 1,
+              "explanation": "Anaphora is the repetition of a word or phrase at the beginning of successive clauses."
+            },
+            {
+              "question": "What does the rhetorical device of antithesis do?",
+              "choices": [
+                "Creates contrast between two opposing ideas.",
+                "Repeats a phrase for emphasis.",
+                "Provides an indirect reference to something.",
+                "Uses humor to persuade the audience."
+              ],
+              "answer": 0,
+              "explanation": "Antithesis places two opposing ideas in close proximity to highlight their contrast."
+            },
+            {
+              "question": "Which of the following is an example of parallelism?",
+              "choices": [
+                "'I came, I saw, I conquered.'",
+                "'It was the best of times, it was the worst of times.'",
+                "'She spoke with kindness and with strength.'",
+                "'He is the salt of the earth.'"
+              ],
+              "answer": 0,
+              "explanation": "Parallelism involves the repetition of grammatical structures to create a sense of rhythm and balance."
+            }
+          ]
+        }
+      ],
+      "unit_review": {
+        "summary": "This unit focuses on rhetorical strategies such as appeals and rhetorical devices that writers use to persuade their audience.",
+        "key_points": [
+          "Understanding rhetorical appeals (ethos, pathos, logos) is essential for analyzing how authors persuade their audience.",
+          "Rhetorical devices add depth and emphasis to arguments and can make a message more persuasive."
+        ],
+        "practice_questions": []
+      }
+    }
+  ],
+  "rhetorical_devices_master": [
+    {
+      "device": "Anaphora",
+      "definition": "The repetition of a word or phrase at the beginning of successive clauses.",
+      "example": "I have a dream that one day this nation will rise up... I have a dream that one day... (Martin Luther King Jr.)"
+    },
+    {
+      "device": "Parallelism",
+      "definition": "The use of components in a sentence that are grammatically the same or similar in structure, sound, or meaning.",
+      "example": "It was the best of times, it was the worst of times. (Charles Dickens)"
+    },
+    {
+      "device": "Antithesis",
+      "definition": "The juxtaposition of contrasting ideas in balanced phrases or clauses.",
+      "example": "Give me liberty, or give me death. (Patrick Henry)"
+    },
+    {
+      "device": "Allusion",
+      "definition": "An indirect or passing reference to something outside the text, often from literature, history, or culture.",
+      "example": "This place is like a Garden of Eden."
+    }
+  ],
+  "argument_bank": [
+    {
+      "topic": "Climate Change",
+      "thesis_examples": [
+        "Climate change is a pressing issue that requires immediate government intervention."
+      ],
+      "evidence_examples": [
+        "Scientific research shows rising temperatures are contributing to extreme weather patterns.",
+        "A study by the UN suggests global carbon emissions must be cut by 50% by 2030."
+      ],
+      "counterarguments": [
+        "Some argue that climate change is not caused by human activity and that natural cycles are to blame.",
+        "Others argue that the economic costs of addressing climate change outweigh the benefits."
+      ]
+    }
+  ],
+  "essay_writing": {
+    "rhetorical_analysis": {
+      "structure": [
+        "Thesis (what + how + why)",
+        "Body paragraphs (strategies + effect)",
+        "Conclusion"
+      ],
+      "practice_prompts": [
+        "Analyze how the author of the article uses rhetorical strategies to persuade the audience."
+      ],
+      "sample_essays": []
+    },
+    "argument_essay": {
+      "structure": [
+        "Defensible thesis",
+        "Clear line of reasoning",
+        "Evidence (examples, facts, experiences)",
+        "Counterargument and refutation",
+        "Conclusion"
+      ],
+      "practice_prompts": [
+        "Argue for or against the necessity of renewable energy."
+      ],
+      "sample_essays": []
+    },
+    "synthesis_essay": {
+      "structure": [
+        "Thesis",
+        "Use at least 3 sources",
+        "Blend sources into argument",
+        "Analysis and commentary",
+        "Conclusion"
+      ],
+      "practice_prompts": [
+        "Use the provided sources to argue for or against the legalization of marijuana."
+      ],
+      "sample_essays": []
+    }
+  },
+  "multiple_choice_prep": {
+    "strategies": [
+      "Read actively and annotate",
+      "Identify author's purpose",
+      "Look for tone and shifts",
+      "Eliminate distractors"
+    ],
+    "practice_questions": []
+  },
+  "vocabulary": [
+    {
+      "term": "Ethos",
+      "definition": "The appeal to the credibility or character of the writer or speaker.",
+      "example": "A doctor recommending a medical treatment because of their expertise."
+    },
+    {
+      "term": "Pathos",
+      "definition": "The appeal to the audience's emotions.",
+      "example": "A charity ad showing pictures of starving children to invoke sympathy."
+    },
+    {
+      "term": "Logos",
+      "definition": "The appeal to logic and reason.",
+      "example": "Using statistics and facts to show the effectiveness of a policy."
+    }
+  ],
+  "common_fallacies": [
+    {
+      "fallacy": "Strawman",
+      "definition": "Misrepresenting someone's argument to make it easier to attack.",
+      "example": "Person A: 'We should have stricter gun control laws.' Person B: 'Person A wants to take away all our guns.'"
+    },
+    {
+      "fallacy": "Ad Hominem",
+      "definition": "Attacking the person making the argument instead of the argument itself.",
+      "example": "How can you trust his opinion on climate change? He's not even a scientist!"
+    },
+    {
+      "fallacy": "False Dilemma",
+      "definition": "Presenting only two options when there are more possibilities.",
+      "example": "Either we ban all cars now or the planet is doomed."
+    }
+  ],
+  "practice_resources": {
+    "past_exams": [],
+    "question_bank": [],
+    "flashcards": []
+  },
+  "study_plan": {
+    "weekly_schedule": [],
+    "essay_practice_schedule": [],
+    "progress_tracking": {
+      "essays_written": [],
+      "practice_scores": []
+    }
+  },
+  "mistake_log": [
+    {
+      "date": "",
+      "section": "",
+      "error": "",
+      "correction": ""
+    }
+  ]
+}
