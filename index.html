@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Study App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- AUTH PAGE -->
+<section id="authPage" class="page active">
+  <div class="auth-container">
+    <h1>StudyQuest</h1>
+    <input type="email" placeholder="Email" required>
+    <input type="password" placeholder="Password" required>
+    
+    <label>
+      <input type="checkbox"> Remember me
+    </label>
+
+    <button onclick="goTo('dashboard')">Sign In</button>
+    <p class="link">Forgot password?</p>
+  </div>
+</section>
+
+<!-- DASHBOARD -->
+<section id="dashboard" class="page">
+  <h2>Dashboard</h2>
+<div class="top-bar">
+  <div class="xp-container">
+    <div class="xp-label">Level 3</div>
+    <div class="xp-bar">
+      <div class="xp-fill" style="width: 60%"></div>
+    </div>
+  </div>
+
+  <div class="streak">🔥 5 Day Streak</div>
+</div>
+  <div class="card-grid">
+    <div class="analytics">
+  <h3>Progress</h3>
+  <p>Quizzes Completed: 12</p>
+  <p>Accuracy: 78%</p>
+  <p>XP Earned: 1240</p>
+</div>
+    <div class="card math" onclick="openSubject('Math')">Math</div>
+    <div class="card english" onclick="openSubject('English')">English</div>
+    <div class="card history" onclick="openSubject('History')">History</div>
+    <div class="card science" onclick="openSubject('Science')">Science</div>
+  </div>
+</section>
+
+<!-- SUBJECT PAGE -->
+<section id="subjectPage" class="page">
+  <button onclick="goTo('dashboard')">← Back</button>
+  <h2 id="subjectTitle"></h2>
+
+  <input type="text" placeholder="Search classes..." class="search">
+
+  <div id="classList" class="list"></div>
+</section>
+
+<!-- CLASS PAGE -->
+<section id="classPage" class="page">
+  <button onclick="goTo('subjectPage')">← Back</button>
+  <h2 id="classTitle"></h2>
+
+  <div class="tabs">
+    <button onclick="showTab('quizTab')">Quizzes</button>
+    <button onclick="showTab('gameTab')">Games</button>
+    <button onclick="showTab('notesTab')">Notes</button>
+  </div>
+
+  <div id="quizTab" class="tab active">
+    <p>📝 Quiz placeholder</p>
+  </div>
+
+  <div id="gameTab" class="tab">
+    <p>🎮 Game placeholder</p>
+  </div>
+
+  <div id="notesTab" class="tab">
+    <p>📚 Notes placeholder</p>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
